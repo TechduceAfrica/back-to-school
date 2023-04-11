@@ -4,19 +4,14 @@ import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import PrimaryBtn from './Components/PrimaryBtn';
 import SecondaryBtn from './Components/SecondaryBtn';
+import Testimonial from './Components/Testimonial';
 
 function App() {
   return (
     <>
       <NavBar />
       <div className='maincontainer'>
-        <PrimaryBtn
-          btnlink=""
-          btntext="text" />
-
-        <SecondaryBtn
-          btnlink=""
-          btntext="Secondarytext" />
+        <Testimonial />
       </div>
       <Footer />
     </>
