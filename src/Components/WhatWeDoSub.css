@@ -83,6 +83,10 @@
     border-radius: 40px;
 }
 
+.WhatWeDoSubGroup-inner {
+    flex-basis: calc(35% - 40px);
+}
+
 
 @media only screen and (max-width: 787px) {
     .whatwedosub-single-wrapper {
@@ -91,5 +95,10 @@
 
     .whatwedosub-single-wrapper p, .whatwedosub-single-wrapper h3 {
         text-align: center;
+    }
+
+    .WhatWeDoSubGroup-wrapper {
+        flex-direction: column;
+        padding: 5%;
     }
 }

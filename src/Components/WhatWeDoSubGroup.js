@@ -24,12 +24,14 @@ export default function WhatWeDoSubGroup() {
         <div className='WhatWeDoSubGroup-wrapper'>
             {WhatWeDoSubDetails.map((WhatWeDoSubDetail, index) => 
             (
-                <WhatWeDoSub 
-                    key={index}
-                    img={WhatWeDoSubDetail.btsimg}
-                    title={WhatWeDoSubDetail.btstitle}
-                    text={WhatWeDoSubDetail.btstext}
-                />
+                <div className='WhatWeDoSubGroup-inner'>
+                    <WhatWeDoSub 
+                        key={index}
+                        img={WhatWeDoSubDetail.btsimg}
+                        title={WhatWeDoSubDetail.btstitle}
+                        text={WhatWeDoSubDetail.btstext}
+                    />
+                </div>
             )
             )}
         </div>
