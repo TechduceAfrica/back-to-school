@@ -1,0 +1,29 @@
+.primary-btn-wrapper a {
+    color: #ffffff;
+    background-color: #EF8451;
+    border: solid 3px #EF8451;
+    border-radius: 10px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in 10ms;
+}
+
+.primary-btn-wrapper a:hover {
+    background-color: #ffffff;
+    color: #EF8451;
+}
+
+.secondary-btn-wrapper a {
+    color: #ffffff;
+    background-color: transparent;
+    border: solid 3px #ffffff;
+    border-radius: 10px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in 10ms;
+}
+
+.secondary-btn-wrapper a:hover {
+    background-color: #ffffff;
+    color: #EF8451;
+}
