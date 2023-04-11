@@ -29,21 +29,22 @@ export default function Testimonial() {
         <div className='testimoniallist-wrapper'>
     
             {testimonialsList.map((testimonialList, index) => 
-            (
-                <div className='testimonial-wrapper' key={index}>
-                    <p>
-                    {testimonialList.text}
-                    </p>
+                (
+                    <div className='testimonial-wrapper' key={index}>
+                        <p>
+                            {testimonialList.text}
+                        </p>
 
-                    <div className='testimonial-img'>
-                        <img src={testimonialList.image} alt='' />
+                        <div className='testimonial-img'>
+                            <img src={testimonialList.image} alt='' />
+                        </div>
+                        
+                        <div>
+                            <h4>{testimonialList.name}</h4>
+                            <h5>{testimonialList.who}</h5>
+                        </div>
                     </div>
-                    <div>
-                        <h4>{testimonialList.name}</h4>
-                        <h5>{testimonialList.who}</h5>
-                    </div>
-                </div>
-            )
+                )
             )}
         
         </div>

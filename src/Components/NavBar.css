@@ -1,4 +1,8 @@
 .nav-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,13 +10,14 @@
     box-shadow: 0px 8px 20px -5px #00000017;
     margin: auto;
     max-width: 1240px;
+    z-index: 99;
 }
 
 nav {
     flex-basis: 70%;
     display: flex;
     gap: 35px;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -52,7 +57,7 @@ nav a {
     }
 
     .hamburger.clicked .line {
-        background-color: #dddddd;
+        background-color: #a7a7a7;
     }
 
     .hamburger.clicked .line1 {
@@ -71,12 +76,12 @@ nav a {
 
     .mobile-nav {
         display: block;
-        width: 60%;
+        width: 70%;
         height: 100%;
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #ffffff;
+        background-color: #ffffffa2;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         transform: translateX(-110%);

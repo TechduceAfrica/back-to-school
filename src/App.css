@@ -13,6 +13,7 @@ body {
 
 p, a {
   font-weight: 400;
+  margin: 0px;
   font-family: 'Helvetica Now Display';
   font-style: normal;
   font-size: 18px;
@@ -28,6 +29,7 @@ a {
 h2, h3 {
   font-family: 'DM Sans';
   font-style: normal;
+  margin: 0px;
 }
 
 h2 {

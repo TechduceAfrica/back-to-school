@@ -1,0 +1,95 @@
+.whatwedosub-single-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whatwedosub-single-img-wrapper {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: #EF8451;
+}
+
+.whatwedosub-single-wrapper h3 {
+    font-size: 16px;
+    color: #093532;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.whatwedosub-single-wrapper p {
+    font-family: Helvetica Now Display;
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+
+.whatwedosub-single-wrapper a {
+    font-family: Helvetica Now Display;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    width: 95px;
+    overflow: hidden;
+}
+
+.whatwedosub-single-wrapper a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 95px;
+    background-color: #093532;
+    transform: translateX(0);
+    transition: all 300ms ease-in-out 10ms;
+}
+
+.whatwedosub-single-wrapper a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 95px;
+    background-color: #093532;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out 200ms;
+}
+
+.whatwedosub-single-wrapper a:hover::after {
+    transform: translateX(100%);
+}
+
+.whatwedosub-single-wrapper a:hover::before {
+    transform: translateX(0);
+}
+
+
+.WhatWeDoSubGroup-wrapper {
+    display: flex;
+    gap: 40px;
+    background-color: #F2EBE4;
+    padding: 60px;
+    border-radius: 40px;
+}
+
+
+@media only screen and (max-width: 787px) {
+    .whatwedosub-single-wrapper {
+        align-items: center;
+    }
+
+    .whatwedosub-single-wrapper p, .whatwedosub-single-wrapper h3 {
+        text-align: center;
+    }
+}
