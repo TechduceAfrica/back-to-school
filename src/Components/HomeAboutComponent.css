@@ -1,0 +1,101 @@
+.home-about-section-wrapper {
+    background-color: #2A6355;
+    background-image: url('https://backtoschool.ngo/backtoschool-assets/Back%20to%20school%20children.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 64px;
+    margin: 32px 0px;
+    border-radius: 40px;
+}
+
+.home-about-section-wrapper > div {
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.home-about-section-wrapper > div > div {
+    flex-basis: calc(50% - 20px);
+}
+
+.home-about-section-wrapper img {
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.home-about-section-wrapper p {
+    font-family: 'Helvetica Now Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
+
+.home-about-section-wrapper h3 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: 83px;
+    color: #FFFFFF;
+}
+
+.home-about-section-wrapper h4 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.home-about-section-wrapper .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.home-about-section-wrapper-right-btn {
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 787px) {
+    .home-about-section-wrapper {
+        background-image: none;
+        padding: 64px 20px;
+    }
+
+    .home-about-section-wrapper img {
+        visibility: visible;
+    }
+
+    .home-about-section-wrapper > div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-about-section-wrapper .left {
+        flex-direction: column-reverse;
+    }
+    
+
+    .home-about-section-wrapper h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .home-about-section-wrapper h4 {
+        font-size: 22px;
+        color: #dddddd;
+        margin: 10px 0px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Footer.css'
+import './Footer.css';
+import { RiInstagramFill, RiFacebookCircleFill, RiTwitterFill, RiWhatsappFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
@@ -17,14 +18,15 @@ export default function Footer() {
           </div>
 
           <div className='footer-social-wrapper'>
-            <a href='#' target='_blank'>Insta</a>
-            <a href='#' target='_blank'>FB</a>
-            <a href='#' target='_blank'>Twitter</a>
+            <a href='https://www.instagram.com/' target='_blank' rel="noreferrer"><RiInstagramFill/></a>
+            <a href='https://web.facebook.com/' target='_blank' rel="noreferrer"><RiFacebookCircleFill/></a>
+            <a href='https://twitter.com/' target='_blank' rel="noreferrer"><RiTwitterFill/></a>
+            <a href='https://whatsapp.com/' target='_blank' rel="noreferrer"><RiWhatsappFill /></a>
           </div>
 
           <div className='footer-btns-wrapper'>
-            <a href='' className='pri-btn'>Browse campaign</a>
-            <a href=''>Get involved</a>
+            <a href='/whatwedo' className='pri-btn'>Browse campaign</a>
+            <a href='/getinvolved'>Get involved</a>
           </div>
         </div>
       </div>

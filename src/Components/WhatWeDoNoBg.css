@@ -1,0 +1,22 @@
+.what-we-do-nbg-wrapper {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.what-we-do-nbg-inner {
+    max-width: calc( 60% - 20px);
+}
+
+.what-we-do-nbg-inner a {
+    margin-top: 10px;
+    color: #093532;
+}
+
+@media only screen and (max-width: 787px) {
+    .what-we-do-nbg-wrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}

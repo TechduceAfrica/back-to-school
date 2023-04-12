@@ -1,0 +1,72 @@
+.home-support-component-wrapper {
+    display: flex;
+    padding: 64px;
+    margin: 64px 0px;
+    gap: 40px;
+    background: #F2EBE4;
+    border-radius: 40px;
+}
+
+.home-support-component-wrapper > div {
+    flex-basis: calc( 50% - 40px);
+}
+
+.home-support-component-wrapper p {
+    font-family: 'Helvetica Now Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #555555;
+    margin: 20px 0px;
+}
+
+.home-support-component-wrapper h4 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    color: #EF8451;
+    margin: 0;
+}
+
+.home-support-component-wrapper h3 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: 83px;
+    color: #000000;
+}
+
+.home-support-btn-wrapper {
+    margin-top: 50px;
+}
+
+.home-support-btn-wrapper a {
+    color: #EF8451;
+    border-color: #EF8451;
+}
+
+@media only screen and (max-width: 787px) {
+    .home-support-component-wrapper {
+        flex-direction: column-reverse;
+        text-align: center
+    }
+
+    .home-support-component-wrapper h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .home-support-component-wrapper h4 {
+        font-size: 22px;
+        color: #dddddd;
+        margin: 10px 0px;
+    }
+}
