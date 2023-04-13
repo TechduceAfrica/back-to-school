@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+.about-mv-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 64px;
+    color: #ffffff;
+    border-radius: 40px;
+    background-color: #2A6355;
+}
+
+.about-mv-section-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: calc( 50% - 60px );
+}
+
+.about-mv-section-wrapper > div > img {
+    max-width: 85px;
+    width: 100%;
+}
+
+.about-mv-section-wrapper h3 {
+    font-family: 'DM Sans';
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.about-mv-section-wrapper p {
+    font-family: 'Helvetica Now Display';
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+@media only screen and (max-width: 787px) {
+    .about-mv-section-wrapper {
+        flex-direction: column;
+        padding: 64px 20px;
+    }
+}
