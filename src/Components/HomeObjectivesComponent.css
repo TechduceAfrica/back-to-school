@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.home-obj-wrapper > div {
+    flex-basis: calc( 50% - 20px);
+}
+
 .home-obj-wrapper h3 {
     font-family: 'DM Sans';
     font-style: normal;
@@ -38,6 +42,10 @@
 
 .home-obj-btn-wrapper {
     margin-top: 80px;
+}
+
+.home-obj-wrapper img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 787px) {

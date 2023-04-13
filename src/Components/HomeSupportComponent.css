@@ -1,5 +1,6 @@
 .home-support-component-wrapper {
     display: flex;
+    align-items: center;
     padding: 64px;
     margin: 64px 0px;
     gap: 40px;
@@ -51,6 +52,10 @@
 .home-support-btn-wrapper a {
     color: #EF8451;
     border-color: #EF8451;
+}
+
+.home-support-component-wrapper img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 787px) {
