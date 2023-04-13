@@ -39,6 +39,12 @@ export default function NavBar() {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
+
   return (
     <>
       <div className='nav-container'>

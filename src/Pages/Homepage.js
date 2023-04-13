@@ -24,6 +24,10 @@ export default function Homepage() {
     document.title = 'Back to School | Help A Child Back To School';
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     < >
         <div className="fade-in">

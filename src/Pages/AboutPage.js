@@ -21,6 +21,7 @@ export default function AboutPage() {
 
   useEffect(() => {
     document.title = 'Back to School Story | High-quality education to disadvantaged children';
+    window.scrollTo(0, 0);
   }, []);
   
 

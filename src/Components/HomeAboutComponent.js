@@ -37,7 +37,7 @@ export default function HomeAboutComponent() {
                     <div className='home-about-section-wrapper-right-btn'>
                         <PrimaryBtn
                             btntext= 'read more'
-                            btnlink= '/about' />
+                            btnlink= './ourstory' />
                     </div>
                     
                 </div>

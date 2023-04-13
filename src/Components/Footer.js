@@ -25,8 +25,8 @@ export default function Footer() {
           </div>
 
           <div className='footer-btns-wrapper'>
-            <a href='/whatwedo' className='pri-btn'>Browse campaign</a>
-            <a href='/getinvolved'>Get involved</a>
+            <a href='./whatwedo' className='pri-btn'>Browse campaign</a>
+            <a href='./getinvoved'>Get involved</a>
           </div>
         </div>
       </div>

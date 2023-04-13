@@ -10,7 +10,7 @@ export default function WhatWeDoSub(props) {
             </div>
             <h3>{props.title}</h3>
             <p>{props.text}</p>
-            <a href='/whatwedo'  target='_self' rel='noreferrer'>know more</a>
+            <a href='./whatwedo'  target='_self' rel='noreferrer'>know more</a>
         </div>
     </>
   )

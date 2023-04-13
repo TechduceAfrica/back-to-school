@@ -22,7 +22,7 @@ export default function HomeObjectivesComponent() {
                 </div>
                 <div className='home-obj-btn-wrapper'>
                     <PrimaryBtn
-                        btnlink='/'
+                        btnlink='./ourstory'
                         btntext='read more'
                     />
                 </div>

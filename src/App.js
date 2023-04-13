@@ -7,6 +7,7 @@ import { BrowserRouter,
           Routes,
           Route,
  } from 'react-router-dom';
+import WhatWeDoPage from './Pages/WhatWeDoPage';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Homepage />} />
             <Route exact path='/ourstory' element={<AboutPage />} />
-            
+            <Route exact path='/whatwedo' element={<WhatWeDoPage />} />
           </Routes>
         </div>
         <Footer />

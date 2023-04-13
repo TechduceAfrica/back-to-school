@@ -21,7 +21,7 @@ export default function HomeHeroSection() {
                 </p>
                 <PrimaryBtn 
                     btntext= 'read more'
-                    btnlink= '/about'/>
+                    btnlink= '/whatwedo'/>
             </div>
 
             <div className='homehero-right'>

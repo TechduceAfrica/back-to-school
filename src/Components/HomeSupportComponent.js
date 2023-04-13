@@ -21,7 +21,7 @@ export default function HomeSupportComponent() {
                 <div className='home-support-btn-wrapper'>
                     <SecondaryBtn 
                         btntext='get involved'
-                        btnlink='/getinvolved'
+                        btnlink='./getinvoved'
                     />
                 </div>
             </div>
