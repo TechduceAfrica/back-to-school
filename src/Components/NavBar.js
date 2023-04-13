@@ -1,61 +1,84 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './NavBar.css'
-import logo from "../Logo.svg"
+import logo from "../Logo.svg";
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
 
-    const navRef = useRef(null);
-    const logoRef = useRef(null);
-    const hamburgerRef = useRef(null);
+  const navRef = useRef(null);
+  const logoRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
-    function handleHamburgerClick() {
-      hamburgerRef.current.classList.toggle("clicked");
-      navRef.current.classList.toggle("show");
-      logoRef.current.classList.toggle("hide");
+  function handleHamburgerClick() {
+    hamburgerRef.current.classList.toggle("clicked");
+    navRef.current.classList.toggle("show");
+    logoRef.current.classList.toggle("hide");
   }
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navRef.current.classList.contains("show") && !event.target.closest('.mobile-nav')) {
+        // If the mobile navigation menu is open and the click is not inside it, toggle the classes to return it to its default state
+        if (!event.target.closest('.hamburger')) {
+          // If the click is not inside the hamburger button, toggle the classes to return the mobile navigation menu to its default state
+          hamburgerRef.current.classList.remove("clicked");
+          navRef.current.classList.remove("show");
+          logoRef.current.classList.remove("hide");
+        } else {
+          // If the click is inside the hamburger button, allow the event to continue to the handleHamburgerClick function
+          return;
+        }
+      }
+    }
+    
+
+    window.addEventListener('click', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
-    <div className='nav-container'>
-      <a href='.'>
-        <img src={logo} alt='Back to school logo' className='logo' ref={logoRef} />
-      </a>
-      <nav>
-        <a href='.'>Home</a>
-        <a href='./ourstory'>Our Story</a>
-        <a href='./whatwedo'>What We Do</a>
-        <a href='./contactus'>Contact Us</a>
-        <a href='./getinvoved'>Get Involved</a>
-      </nav>
+      <div className='nav-container'>
+        <NavLink to='.'>
+          <img src={logo} alt='Back to school logo' className='logo' ref={logoRef} />
+        </NavLink>
+        <nav>
+          <NavLink to='.'>Home</NavLink>
+          <NavLink to='./ourstory'>Our Story</NavLink>
+          <NavLink to='./whatwedo'>What We Do</NavLink>
+          <NavLink to='./contactus'>Contact Us</NavLink>
+          <NavLink to='./getinvoved'>Get Involved</NavLink>
+        </nav>
 
-      <div className='hamburger' ref={hamburgerRef} onClick={handleHamburgerClick}>
-        <span className='line line1'></span>
-        <span className='line line2'></span>
-        <span className='line line3'></span>
+        <div className='hamburger' ref={hamburgerRef} onClick={handleHamburgerClick}>
+          <span className='line line1'></span>
+          <span className='line line2'></span>
+          <span className='line line3'></span>
+        </div>
+
+        <div className='mobile-nav' ref={navRef}>
+          <ul>
+            <li>
+              <NavLink to='.' onClick={handleHamburgerClick}>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to='./ourstory' onClick={handleHamburgerClick}>Our Story</NavLink>
+            </li>
+            <li>
+              <NavLink to='./whatwedo' onClick={handleHamburgerClick}>What We Do</NavLink>
+            </li>
+            <li>
+              <NavLink to='./contactus' onClick={handleHamburgerClick}>Contact Us</NavLink>
+            </li>
+            <li>
+              <NavLink to='./getinvoved' onClick={handleHamburgerClick}>Get Involved</NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div className='mobile-nav' ref={navRef}>
-        <ul>
-          <li>
-            <a href='.'>Home</a>
-          </li>
-          <li>
-            <a href='./ourstory'>Our Story</a>
-          </li>
-          <li>
-            <a href='./whatwedo'>What We Do</a>
-          </li>
-          <li>
-            <a href='./contactus'>Contact Us</a>
-          </li>
-          <li>
-            <a href='./getinvoved'>Get Involved</a>
-          </li>
-        </ul>
-
-      </div>
-
-    </div>
     </>
   )
 }
