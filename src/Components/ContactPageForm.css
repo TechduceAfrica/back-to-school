@@ -1,0 +1,116 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica Now Display';
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact-form-input {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form-label {
+    position: absolute;
+    top: -0.7rem;
+    left: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    background-color: #F5F3EE;
+    padding: 3px;
+    transition: all 300ms ease-in-out 10ms;
+    pointer-events: none;
+  }
+  
+  .contact-form-field {
+    font-family: 'Helvetica Now Display';
+    /* width: 100%; */
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    font-size: 1.2rem;
+    color: #777777;
+    background-color: transparent;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .contact-form-field:focus {
+    outline: none;
+    border: 2px solid #2A6355;
+  }
+  
+  .contact-form-field.not-empty + .contact-form-label,
+  .contact-form-field:focus + .contact-form-label {
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    color: #2A6355;
+    background-color: #F5F3EE;
+    padding: 2px 4px;
+  }
+  
+  .contact-form-submit {
+    width: 50%;
+    font-family: 'DM Sans';
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #2A6355;
+    border: solid 3px #2A6355;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .contact-form-submit:hover {
+    color: #2A6355;
+    background-color: #2a635500;
+    border: solid 3px #2A6355;
+  }
+  
+  .contact-form-error-message,
+  .contact-form-success-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .contact-form-error-message {
+    color: #f00;
+    background-color: #fee;
+  }
+  
+  .contact-form-success-message {
+    color: #2A6355;
+    background-color: #efe;
+  }
+  
+  .contact-form-field:invalid {
+    border-color: #EF8451;
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(1rem);
+    }
+    50% {
+      transform: translateX(-1rem);
+    }
+    75% {
+      transform: translateX(1rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

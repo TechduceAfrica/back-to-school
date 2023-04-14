@@ -1,15 +1,12 @@
 import React from 'react';
 import './WhatWeDoHeroSection.css';
 
-export default function WhatWeDoHeroSection() {
+export default function WhatWeDoHeroSection(props) {
   return (
     <>
-        <div className='what-we-do-hero-wrapper' style={{ backgroundImage: `url(${`https://backtoschool.ngo/backtoschool-assets/What%20back%20to%20school%20do.png`})` }}>
-            <h2>What we do</h2>
-            <p>Back To School is a Nigerian charity 
-                organization providing lifechanging 
-                opportunities for all out of school 
-                kids to return back to the classroom</p>
+        <div className='what-we-do-hero-wrapper' >
+            <h2>{props.title}</h2>
+            <p>{props.text}</p>
         </div> 
     </>
   )

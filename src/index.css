@@ -18,3 +18,11 @@ code {
   transition: opacity 500ms ease-in-out 10ms;
 }
 
+.boxed {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.pad {
+  padding: 0px 20px;
+}

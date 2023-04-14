@@ -8,6 +8,7 @@ import { BrowserRouter,
           Route,
  } from 'react-router-dom';
 import WhatWeDoPage from './Pages/WhatWeDoPage';
+import ContactPage from './Pages/ContactPage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route exact path='/' element={<Homepage />} />
             <Route exact path='/ourstory' element={<AboutPage />} />
             <Route exact path='/whatwedo' element={<WhatWeDoPage />} />
+            <Route exact path='/contactus' element={<ContactPage />} />
           </Routes>
         </div>
         <Footer />

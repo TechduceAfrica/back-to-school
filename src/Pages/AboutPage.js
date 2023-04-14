@@ -27,7 +27,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="fade-in">
+      <div className="fade-in boxed pad">
         <AboutPageHeroSection />
         <AboutMissionVisionComponent />
         <AboutVideoComponent />

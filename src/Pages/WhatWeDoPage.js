@@ -25,10 +25,20 @@ export default function WhatWeDoPage() {
   return (
     <>
         <div className="fade-in">
-            <WhatWeDoHeroSection />
+          <div style={{ backgroundImage: `url(${`https://backtoschool.ngo/backtoschool-assets/What%20back%20to%20school%20do.png`})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
+                        backgroundRepeat: 'no-repeat'}}>
+            <WhatWeDoHeroSection 
+              title= "What we do"
+              text= "Back To School is a Nigerian charity organization providing lifechanging opportunities for all out of schoolkids to return back to the classroom"/>    
+          </div> 
+
+            <div className='boxed pad'>
             <WhatWeDoSectionTwo />
             <WhatWeDoImpactSection />
             <WhatWeDoSubGroup />
+            </div>
         </div>  
     </>
   )

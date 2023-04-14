@@ -30,7 +30,7 @@ export default function Homepage() {
 
   return (
     < >
-        <div className="fade-in">
+        <div className="fade-in boxed pad">
             <HomeHeroSection />
             <HomeAboutComponent />
             <HomeObjectivesComponent />
