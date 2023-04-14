@@ -7,17 +7,17 @@ const testimonialsList = [
                 I never would have been able to attend school without their support, 
                 and now I have a chance to pursue my dreams and 
                 make a better life for myself and my family.`,
-        image: "",
+        image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
         name: "Oluwabunmi Mike",
         who: "Student Beneficiary",
     }, {
         text: "BacktoSchool NGO has been a vital partner in my education and community assistance. I am delighted to support their initiatives, which have helped kids like me continue in school and follow our aspirations.",
-        image: "",
+        image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
         name: "Oluwabunmi mike",
         who: "Student Beneficiary",
     }, {
         text: "BacktoSchool NGO has changed my life in so many ways. I never would have been able to attend school without their support, and now I have a chance to pursue my dreams and make a better life for myself and my family.",
-        image: "",
+        image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
         name: "Oluwabunmi mike",
         who: "Student Beneficiary",
     }

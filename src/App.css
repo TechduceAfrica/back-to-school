@@ -16,17 +16,21 @@ p, a {
   margin: 0px;
   font-family: 'Helvetica Now Display';
   font-style: normal;
-  font-size: 18px;
   letter-spacing: 1px;
   line-height: auto;
   color: #000000;
 }
 
-a {
-  text-decoration: none;
+p {
+  font-size: 18px;
 }
 
-h2, h3 {
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+h2, h3, h4 {
   font-family: 'DM Sans';
   font-style: normal;
   margin: 0px;

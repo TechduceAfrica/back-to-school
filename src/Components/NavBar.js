@@ -57,7 +57,7 @@ export default function NavBar() {
             <NavLink to='./ourstory'>Our Story</NavLink>
             <NavLink to='./whatwedo'>What We Do</NavLink>
             <NavLink to='./contactus'>Contact Us</NavLink>
-            <NavLink to='./getinvoved'>Get Involved</NavLink>
+            <NavLink to='./getinvolved'>Get Involved</NavLink>
           </nav>
 
           <div className='hamburger' ref={hamburgerRef} onClick={handleHamburgerClick}>

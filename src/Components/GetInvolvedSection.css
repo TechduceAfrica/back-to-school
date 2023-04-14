@@ -55,6 +55,10 @@
     background-color: #2A6355;
 }
 
+.green > div {
+    align-self: flex-start;
+}
+
 .green p {
     font-weight: 300;
 }
@@ -70,6 +74,14 @@
 
 .light h4, .light p {
     color: #000000;
+}
+
+.light img {
+    width: 100%;
+}
+
+.get-involved-btn {
+    margin-top: 3rem;
 }
 
 @media only screen and (max-width: 787px) {
