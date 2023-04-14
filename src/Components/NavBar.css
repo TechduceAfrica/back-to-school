@@ -1,9 +1,13 @@
-.nav-container {
+.nav-container-wrapper {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
     background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +15,6 @@
     box-shadow: 0px 8px 20px -5px #00000017;
     margin: auto;
     max-width: 1240px;
-    z-index: 99;
 }
 
 nav {

@@ -72,6 +72,7 @@ export default function ContactPageForm() {
             className={`contact-form-field ${message ? 'not-empty' : ''}`}
             value={message}
             placeholder='Your message/inquires goes here'
+            rows={4}
             onChange={(event) => setMessage(event.target.value)}
             required
           ></textarea>

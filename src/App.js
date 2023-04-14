@@ -9,6 +9,7 @@ import { BrowserRouter,
  } from 'react-router-dom';
 import WhatWeDoPage from './Pages/WhatWeDoPage';
 import ContactPage from './Pages/ContactPage';
+import GetInvolvedPage from './Pages/GetInvolvedPage';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route exact path='/ourstory' element={<AboutPage />} />
             <Route exact path='/whatwedo' element={<WhatWeDoPage />} />
             <Route exact path='/contactus' element={<ContactPage />} />
+            <Route exact path='/getinvolved' element={<GetInvolvedPage />} />
           </Routes>
         </div>
         <Footer />

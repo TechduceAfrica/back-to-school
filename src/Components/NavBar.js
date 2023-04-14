@@ -47,42 +47,44 @@ export default function NavBar() {
 
   return (
     <>
-      <div className='nav-container'>
-        <NavLink to='.'>
-          <img src={logo} alt='Back to school logo' className='logo' ref={logoRef} />
-        </NavLink>
-        <nav>
-          <NavLink to='.'>Home</NavLink>
-          <NavLink to='./ourstory'>Our Story</NavLink>
-          <NavLink to='./whatwedo'>What We Do</NavLink>
-          <NavLink to='./contactus'>Contact Us</NavLink>
-          <NavLink to='./getinvoved'>Get Involved</NavLink>
-        </nav>
+      <div className='nav-container-wrapper'>
+        <div className='nav-container'>
+          <NavLink to='.'>
+            <img src={logo} alt='Back to school logo' className='logo' ref={logoRef} />
+          </NavLink>
+          <nav>
+            <NavLink to='.'>Home</NavLink>
+            <NavLink to='./ourstory'>Our Story</NavLink>
+            <NavLink to='./whatwedo'>What We Do</NavLink>
+            <NavLink to='./contactus'>Contact Us</NavLink>
+            <NavLink to='./getinvoved'>Get Involved</NavLink>
+          </nav>
 
-        <div className='hamburger' ref={hamburgerRef} onClick={handleHamburgerClick}>
-          <span className='line line1'></span>
-          <span className='line line2'></span>
-          <span className='line line3'></span>
-        </div>
+          <div className='hamburger' ref={hamburgerRef} onClick={handleHamburgerClick}>
+            <span className='line line1'></span>
+            <span className='line line2'></span>
+            <span className='line line3'></span>
+          </div>
 
-        <div className='mobile-nav' ref={navRef}>
-          <ul>
-            <li>
-              <NavLink to='.' onClick={handleHamburgerClick}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to='./ourstory' onClick={handleHamburgerClick}>Our Story</NavLink>
-            </li>
-            <li>
-              <NavLink to='./whatwedo' onClick={handleHamburgerClick}>What We Do</NavLink>
-            </li>
-            <li>
-              <NavLink to='./contactus' onClick={handleHamburgerClick}>Contact Us</NavLink>
-            </li>
-            <li>
-              <NavLink to='./getinvoved' onClick={handleHamburgerClick}>Get Involved</NavLink>
-            </li>
-          </ul>
+          <div className='mobile-nav' ref={navRef}>
+            <ul>
+              <li>
+                <NavLink to='.' onClick={handleHamburgerClick}>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to='./ourstory' onClick={handleHamburgerClick}>Our Story</NavLink>
+              </li>
+              <li>
+                <NavLink to='./whatwedo' onClick={handleHamburgerClick}>What We Do</NavLink>
+              </li>
+              <li>
+                <NavLink to='./contactus' onClick={handleHamburgerClick}>Contact Us</NavLink>
+              </li>
+              <li>
+                <NavLink to='./getinvolved' onClick={handleHamburgerClick}>Get Involved</NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

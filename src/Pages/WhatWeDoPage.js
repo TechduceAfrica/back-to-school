@@ -29,16 +29,18 @@ export default function WhatWeDoPage() {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
                         backgroundRepeat: 'no-repeat'}}>
-            <WhatWeDoHeroSection 
-              title= "What we do"
-              text= "Back To School is a Nigerian charity organization providing lifechanging opportunities for all out of schoolkids to return back to the classroom"/>    
-          </div> 
+            <div div className='boxed pad'>
+              <WhatWeDoHeroSection 
+                title= "What we do"
+                text= "Back To School is a Nigerian charity organization providing lifechanging opportunities for all out of schoolkids to return back to the classroom"/>    
+            </div> 
+          </div>
 
-            <div className='boxed pad'>
+          <div className='boxed pad'>
             <WhatWeDoSectionTwo />
             <WhatWeDoImpactSection />
             <WhatWeDoSubGroup />
-            </div>
+          </div>
         </div>  
     </>
   )

@@ -7,8 +7,18 @@
     margin: 64px 0px;
 }
 
-.contact-main-section-wrapper > div {
+/* .contact-main-section-wrapper > div {
     flex-basis: calc( 50% - 40px );
+} */
+
+.contact-main-section-left {
+    flex-basis: calc( 50% - 40px );
+}
+
+.contact-main-section-right {
+    flex-basis: calc( 60% - 20px );
+    display: flex;
+    width: calc( 60vw - 20px );
 }
 
 .contact-main-section-left {
@@ -71,7 +81,6 @@
     }
 
     .contact-main-section-right {
-        display: flex;
-        justify-content: center;
+        align-self: normal;
     }
 }
