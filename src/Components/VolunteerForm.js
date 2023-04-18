@@ -78,7 +78,7 @@ export default function VolunteerForm() {
                     id="message"
                     className={`contact-form-field ${message ? 'not-empty' : ''}`}
                     value={message}
-                    placeholder='How/wht will you like to volunteer'
+                    placeholder='How/what will you like to volunteer'
                     rows={4}
                     onChange={(event) => setMessage(event.target.value)}
                     required
@@ -89,7 +89,7 @@ export default function VolunteerForm() {
             </div>
 
             <button type="submit" className="contact-form-submit">
-            Submit
+                Submit
             </button>
             
             {errorMessage && (
