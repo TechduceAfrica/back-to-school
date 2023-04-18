@@ -1,6 +1,7 @@
 import React from 'react';
 import './Testimonial.css';
 
+// testimonial api
 const testimonialsList = [
     {
         text: `BacktoSchool NGO has changed my life in so many ways. 

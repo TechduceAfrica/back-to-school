@@ -9,6 +9,7 @@ export default function ContactPageForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
+  // required event handle
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -83,6 +84,7 @@ export default function ContactPageForm() {
         <button type="submit" className="contact-form-submit">
           Submit
         </button>
+        {/* submit error message or success message */}
         {errorMessage && (
           <div className="contact-form-error-message">{errorMessage}</div>
         )}

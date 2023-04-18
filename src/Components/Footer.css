@@ -73,6 +73,18 @@ svg {
     background-color: transparent;
 }
 
+.footer-credit {
+    text-align: center;
+    background-color: #222222;
+    padding: 10px 5px;
+}
+
+.footer-credit p, .footer-credit a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
 @media only screen and (max-width: 900px) {
     h2 {
         font-size: 32px;

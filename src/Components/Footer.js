@@ -26,9 +26,14 @@ export default function Footer() {
 
           <div className='footer-btns-wrapper'>
             <a href='./whatwedo' className='pri-btn'>Browse campaign</a>
-            <a href='./getinvoved'>Get involved</a>
+            <a href='./getinvolved'>Get involved</a>
           </div>
         </div>
+      </div>
+      <div className='footer-credit'>
+        <p>
+          © BacktoSchool 2023 | All Rights Reserved | Designed by <a href='https://techduce.africa/'>Techduce Africa</a>
+        </p>
       </div>
     </>
   )

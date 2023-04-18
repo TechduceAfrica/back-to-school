@@ -5,10 +5,12 @@ import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
 
+// defining refs
   const navRef = useRef(null);
   const logoRef = useRef(null);
   const hamburgerRef = useRef(null);
 
+  // functions on click to add class
   function handleHamburgerClick() {
     hamburgerRef.current.classList.toggle("clicked");
     navRef.current.classList.toggle("show");
