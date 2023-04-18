@@ -24,7 +24,7 @@ export default function ContactPageForm() {
 
   return (
     <div>
-      <form className="contact-form" onSubmit={handleSubmit} name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden className="contact-form" onSubmit={handleSubmit} >
         <div className="contact-form-input">
         <input type="hidden" name="form-name" value="Contact_page_Form" />
           <input
