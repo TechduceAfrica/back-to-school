@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './NavBar.css'
-import Logo from "../Logo.svg";
+import Logo from "./Logo.svg";
 import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
