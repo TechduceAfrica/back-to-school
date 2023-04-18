@@ -28,11 +28,34 @@ export default function AboutPage() {
     window.scrollTo(0, 0);
   }, []);
   
+  // page schema
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "High-quality education to disadvantaged children | Back to School Story",
+    "image": "https://backtoschoolngo.netlify.app/static/media/Back%20to%20school%20NGO%20Hero%20img.da35e1431f101646fc93.png",
+    "author": {
+      "@type": "Person",
+      "name": "Techduce Africa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Back To School NGO",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://backtoschoolngo.netlify.app/static/media/Logo.949cc01fdb53ab9e7879a5171446c22b.svg"
+      }
+    },
+    "datePublished": "2022-04-10T12:00:00Z",
+    "dateModified": "2022-04-18T12:00:00Z",
+    "articleBody": "Back to School is an Organisation that provides free, high-quality education to disadvantaged children. We reduce primary dropout rates, promote gender equality, and teach children life skills. To reach more people, we work with parents, communities, and local schools and businesses."
+  };
 
   return (
     <>
     {/* Open graph tag for social media */}
       <Helmet>
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <title>High-quality education to disadvantaged children | Back to School Story</title>
         <meta property="og:title" content="Back To School Story" />
         <meta property="og:description" content="Going back to school is an exciting time for students, but for many children around the world, this is a luxury they cannot afford." />
