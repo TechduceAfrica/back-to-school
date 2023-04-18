@@ -9,7 +9,7 @@ export default function ContactPageForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  // required event handle
+  // required event handle on submit
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -18,15 +18,18 @@ export default function ContactPageForm() {
     } else {
       setIsSubmitted(true);
       setErrorMessage('');
-      // Netlify form submission code here
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      })
     }
   };
 
   return (
     <div>
-      <form name="contact" method="post" data-netlify="true" netlify data-netlify-honeypot="bot-field" className="contact-form" onSubmit={handleSubmit} >
+      <form data-netlify="true" name="contact-form" method="post" className="contact-form" onSubmit={handleSubmit} >
         <div className="contact-form-input" >
-        <input type="hidden" name="form-name" value="Contact_page_Form" />
+        <input type="hidden" name="form-name" value="contact-form" />
           <input
             type="text"
             id="name"
