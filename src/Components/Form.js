@@ -9,7 +9,8 @@ export default function Form() {
             <textarea name="message"></textarea>
         </form>
 
-        <form name="contact" method="post" netlify >
+        <form name="contact" method="post" netlify action="#" data-netlify="true">
+            <input type="hidden" name="form-name" value="form" />
             <div>
                 <label>Name</label>
                 <input type='text' name="name" id="name"  />
