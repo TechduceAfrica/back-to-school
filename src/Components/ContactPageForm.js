@@ -18,18 +18,18 @@ export default function ContactPageForm() {
     } else {
       setIsSubmitted(true);
       setErrorMessage('');
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      })
+      // fetch("/", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // })
     }
   };
 
   return (
     <div>
-      <form data-netlify="true" name="contact-form" method="post" className="contact-form" onSubmit={handleSubmit} >
-        <div className="contact-form-input" >
-        <input type="hidden" name="form-name" value="contact-form" />
+      <form className="contact-form" onSubmit={handleSubmit} netlify data-netlify-honeypot="bot-field" data-netlify="true" action="#">
+        <input type="hidden" name="form-name" value="ContactPageForm" />
+          <div className="contact-form-input">
           <input
             type="text"
             id="name"
