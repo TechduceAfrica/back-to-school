@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './NavBar.css'
-import logo from "../Logo.svg";
+import Logo from "../Logo.svg";
 import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
@@ -50,7 +50,7 @@ export default function NavBar() {
       <div className='nav-container-wrapper'>
         <div className='nav-container'>
           <NavLink to='.'>
-            <img src={logo} alt='Back to school logo' className='logo' ref={logoRef} />
+            <img src={Logo} alt='Back to school logo' className='logo' ref={logoRef} />
           </NavLink>
           <nav>
             <NavLink to='.'>Home</NavLink>
