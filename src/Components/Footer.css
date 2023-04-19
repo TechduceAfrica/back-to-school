@@ -74,6 +74,8 @@ svg {
 }
 
 .footer-credit {
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-color: #222222;
     padding: 10px 5px;
