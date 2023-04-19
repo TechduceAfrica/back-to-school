@@ -10,7 +10,7 @@ export default function ContactPageForm() {
   const [errorMessage, setErrorMessage] = useState('');
 
   // required event handle on submit
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!name || !message) {
@@ -18,21 +18,37 @@ export default function ContactPageForm() {
     } else {
       setIsSubmitted(true);
       setErrorMessage('');
+
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'ContactPageForm',
+            name,
+            email,
+            phoneNumber,
+            message,
+          }),
+        });
+
+        if (response.ok) {
+          setIsSubmitted(true);
+        } else {
+          setErrorMessage('Error: Please try again later');
+        }
+      } catch (error) {
+        setErrorMessage('Error: Please try again later');
+      }
     }
   };
 
-  // creating a URL-encoded string of the form data and passing it as the body parameter to the fetch method.
-  const data = new URLSearchParams();
-    data.append('name', name);
-    data.append('email', email);
-    data.append('phoneNumber', phoneNumber);
-    data.append('message', message);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: data.toString(),
-    })
+  // function to encode form data as urlencoded string
+  const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
 
   return (
     <div>
