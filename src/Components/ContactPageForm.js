@@ -18,16 +18,25 @@ export default function ContactPageForm() {
     } else {
       setIsSubmitted(true);
       setErrorMessage('');
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      })
     }
   };
 
+  // creating a URL-encoded string of the form data and passing it as the body parameter to the fetch method.
+  const data = new URLSearchParams();
+    data.append('name', name);
+    data.append('email', email);
+    data.append('phoneNumber', phoneNumber);
+    data.append('message', message);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data.toString(),
+    })
+
   return (
     <div>
-      <form className="contact-form" onSubmit={handleSubmit} netlify data-netlify-honeypot="bot-field" data-netlify="true" action="#" name='Contact_Page_Form' method="post">
+      <form className="contact-form" onSubmit={handleSubmit} data-netlify-honeypot="bot-field" data-netlify="true" action="#" name='Contact_Page_Form' method="post">
         <input type="hidden" name="form-name" value="ContactPageForm" />
         <input type="hidden" name="subject" value="General Inquiry From Back To School Contact Page" />
           <div className="contact-form-input">
