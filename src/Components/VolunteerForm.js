@@ -25,6 +25,21 @@ export default function VolunteerForm() {
     //     }
     // };
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+      
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+      
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => navigate("/thank-you/"))
+          .catch((error) => alert(error));
+      };
+
 
   return (
     <>
@@ -104,25 +119,18 @@ export default function VolunteerForm() {
             </div>
             )}
         </form> */}
-        <form name="volunter" method="POST" data-netlify="true" action='#'>
-            <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Your Role: <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-                </select></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
-            </p>
+        <form
+            data-netlify="true"
+            name="pizzaOrder"
+            method="post"
+            onSubmit={handleSubmit}
+        >
+            <input type="hidden" name="form-name" value="pizzaOrder" />
+            <label>
+            What order did the pizza give to the pineapple?
+            <input name="order" type="text" onChange={handleChange} />
+            </label>
+            <input type="submit" />
         </form>
 
     </>
