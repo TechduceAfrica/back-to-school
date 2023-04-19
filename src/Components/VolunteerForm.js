@@ -104,7 +104,7 @@ export default function VolunteerForm() {
             </div>
             )}
         </form> */}
-        <form name="volunter" method="POST" data-netlify="true">
+        <form name="volunter" method="POST" data-netlify="true" action='#'>
             <p>
                 <label>Your Name: <input type="text" name="name" /></label>
             </p>
