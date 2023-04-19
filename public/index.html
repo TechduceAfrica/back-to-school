@@ -32,6 +32,12 @@
     <meta property="og:url" content="https://www.backtoschoolngo.com/" />
   </head>
   <body>
+    <!-- A little help for the Netlify bots to detect the form -->
+    <form name="contact" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
