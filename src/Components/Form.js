@@ -27,7 +27,7 @@ export default function Form() {
             </div>
 
             <div>
-                <button type="submit">Send</button>
+                <input type="submit" value="Submit" />
             </div>
         </form>
     </>
