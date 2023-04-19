@@ -18,7 +18,10 @@ export default function VolunteerForm() {
         } else {
         setIsSubmitted(true);
         setErrorMessage('');
-        // Netlify form submission code here
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          })
         }
     };
 
@@ -26,8 +29,8 @@ export default function VolunteerForm() {
   return (
     <>
 
-        <form className="contact-form" onSubmit={handleSubmit} name="VolunteerForm" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field" hidden action='#'>
-        <input type="hidden" name="form-name" value="contact" />
+        <form className="contact-form" onSubmit={handleSubmit} name="VolunteerForm" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field" action='#'>
+        <input type="hidden" name="form-name" value="VolunteerForm" />
             <div className="contact-form-input">
                 <input
                     type="text"
