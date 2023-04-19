@@ -3,13 +3,13 @@ import React from 'react'
 export default function Form() {
   return (
     <>
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <form name="hidden_contact" netlify netlify-honeypot="bot-field" hidden>
             <input type="text" name="name" />
             <input type="email" name="email" />
             <textarea name="message"></textarea>
         </form>
 
-        <form name="contact" method="post" netlify action="#" data-netlify="true">
+        <form name="hiddencontact" method="post" netlify action="#" data-netlify="true">
             <input type="hidden" name="form-name" value="form" />
             <div>
                 <label>Name</label>
