@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './ContactPageForm.css';
 
 export default function VolunteerForm() {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
-    const [message, setMessage] = useState('');
-    const [isSubmitted, setIsSubmitted] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
+    // const [name, setName] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [phoneNumber, setPhoneNumber] = useState('');
+    // const [message, setMessage] = useState('');
+    // const [isSubmitted, setIsSubmitted] = useState(false);
+    // const [errorMessage, setErrorMessage] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
 
-        if (!name || !message) {
-        setErrorMessage('Please enter your name and message');
-        } else {
-        setIsSubmitted(true);
-        setErrorMessage('');
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          })
-        }
-    };
+    //     if (!name || !message) {
+    //     setErrorMessage('Please enter your name and message');
+    //     } else {
+    //     setIsSubmitted(true);
+    //     setErrorMessage('');
+    //     fetch("/", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //       })
+    //     }
+    // };
 
 
   return (
     <>
 
-        <form className="contact-form" onSubmit={handleSubmit} name="VolunteerForm" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field" action='#'>
+        {/* <form className="contact-form" onSubmit={handleSubmit} name="VolunteerForm" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field" action='#'>
         <input type="hidden" name="form-name" value="VolunteerForm" />
             <div className="contact-form-input">
                 <input
@@ -103,6 +103,26 @@ export default function VolunteerForm() {
                 Thank you for your message!
             </div>
             )}
+        </form> */}
+        <form name="volunter" method="POST" data-netlify="true">
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+                </select></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
         </form>
 
     </>
