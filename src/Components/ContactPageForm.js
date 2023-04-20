@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import './ContactPageForm.css';
+import { createClient } from '@supabase/supabase-js';
 
-export default function ContactPageForm() {
+
+export default function VolunteerForm() {
+
+  const supabaseUrl = 'https://ipntqfirnsrtjvbcyrol.supabase.co';
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbnRxZmlybnNydGp2YmN5cm9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE5Njg2MzcsImV4cCI6MTk5NzU0NDYzN30.DBKtij1d3IMKCF6rez9GsAes8uBBTi0RR8r8b73bDnU';
+
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -9,52 +17,39 @@ export default function ContactPageForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  // required event handle on submit
   const handleSubmit = async (event) => {
-    event.preventDefault();
-
+  event.preventDefault();
+  
     if (!name || !message) {
-      setErrorMessage('Please enter your name and message');
+        setErrorMessage('Please enter your name and message');
     } else {
-      setIsSubmitted(true);
-      setErrorMessage('');
+        setIsSubmitted(true);
+        setErrorMessage('');
+        console.log("Name: ", name);
+        console.log("Phone Number: ", phoneNumber);
+        console.log("Email: ", email);
+        console.log("Message: ", message);
 
-      try {
-        const response = await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encode({
-            'form-name': 'ContactPageForm',
-            name,
-            email,
-            phoneNumber,
-            message,
-          }),
-        });
+        try {
+            const { data, error } = await supabase
+                .from('Contact Page Form')
+                .insert({ name, phone_number: phoneNumber, email, message });
 
-        if (response.ok) {
-          setIsSubmitted(true);
-        } else {
-          setErrorMessage('Error: Please try again later');
+            if (error) {
+                throw error;
+            }
+
+            console.log('Data inserted successfully:', data);
+        } catch (error) {
+            console.error('Error inserting data:', error);
         }
-      } catch (error) {
-        setErrorMessage('Error: Please try again later');
-      }
     }
-  };
+};
 
-  // function to encode form data as urlencoded string
-  const encode = (data) => {
-    return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&');
-  };
 
   return (
     <div>
-      <form className="contact-form" onSubmit={handleSubmit} data-netlify-honeypot="bot-field" data-netlify="true" action="#" name='Contact_Page_Form' method="post">
-        <input type="hidden" name="form-name" value="ContactPageForm" />
-        <input type="hidden" name="subject" value="General Inquiry From Back To School Contact Page" />
+      <form className="contact-form" onSubmit={handleSubmit}  name='Contact_Page_Form'>
           <div className="contact-form-input">
           <input
             type="text"
