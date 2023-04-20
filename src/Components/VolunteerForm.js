@@ -1,51 +1,57 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import './ContactPageForm.css';
+import { createClient } from '@supabase/supabase-js';
+
 
 export default function VolunteerForm() {
 
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [phoneNumber, setPhoneNumber] = useState('');
-    // const [message, setMessage] = useState('');
-    // const [isSubmitted, setIsSubmitted] = useState(false);
-    // const [errorMessage, setErrorMessage] = useState('');
+    const supabaseUrl = 'https://ipntqfirnsrtjvbcyrol.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbnRxZmlybnNydGp2YmN5cm9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE5Njg2MzcsImV4cCI6MTk5NzU0NDYzN30.DBKtij1d3IMKCF6rez9GsAes8uBBTi0RR8r8b73bDnU';
 
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
-    //     if (!name || !message) {
-    //     setErrorMessage('Please enter your name and message');
-    //     } else {
-    //     setIsSubmitted(true);
-    //     setErrorMessage('');
-    //     fetch("/", {
-    //         method: "POST",
-    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //       })
-    //     }
-    // };
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [message, setMessage] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-      
-        const myForm = event.target;
-        const formData = new FormData(myForm);
-      
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => navigate("/thank-you/"))
-          .catch((error) => alert(error));
-      };
-
+    
+        if (!name || !message) {
+            setErrorMessage('Please enter your name and message');
+        } else {
+            setIsSubmitted(true);
+            setErrorMessage('');
+            console.log("Name: ", name);
+            console.log("Phone Number: ", phoneNumber);
+            console.log("Email: ", email);
+            console.log("Message: ", message);
+    
+            try {
+                const { data, error } = await supabase
+                    .from('Volunteer Test Table')
+                    .insert({ name, phone_number: phoneNumber, email, message });
+    
+                if (error) {
+                    throw error;
+                }
+    
+                console.log('Data inserted successfully:', data);
+            } catch (error) {
+                console.error('Error inserting data:', error);
+            }
+        }
+    };
 
   return (
     <>
 
-        {/* <form className="contact-form" onSubmit={handleSubmit} name="VolunteerForm" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field" action='#'>
-        <input type="hidden" name="form-name" value="VolunteerForm" />
+        <form className="contact-form" onSubmit={handleSubmit} name="VolunteerForm" >
+            <input type="hidden" name="subject" value="Volunteer Form For Back To School" />
+
             <div className="contact-form-input">
                 <input
                     type="text"
@@ -85,6 +91,7 @@ export default function VolunteerForm() {
                     value={email}
                     placeholder='e.g (email@email.com)'
                     onChange={(event) => setEmail(event.target.value)}
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                 />
                 <label htmlFor="email" className="contact-form-label">
                     Email
@@ -118,21 +125,9 @@ export default function VolunteerForm() {
                 Thank you for your message!
             </div>
             )}
-        </form> */}
-        <form
-            data-netlify="true"
-            name="pizzaOrder"
-            method="post"
-            onSubmit={handleSubmit}
-        >
-            <input type="hidden" name="form-name" value="pizzaOrder" />
-            <label>
-            What order did the pizza give to the pineapple?
-            <input name="order" type="text" onChange={handleChange} />
-            </label>
-            <input type="submit" />
         </form>
+        
 
     </>
   )
-}
+};
