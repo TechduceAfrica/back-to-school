@@ -1,17 +1,5 @@
 import React from 'react';
 
-const submit = (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(() => console.log('Form submitted successfully!'))
-    .catch((error) => console.error(error));
-  };
-
 export default function Form() {
   return (
     <>
@@ -19,7 +7,7 @@ export default function Form() {
             name="form v1" 
             method="post" 
             data-netlify="true" 
-            onSubmit={submit}
+            action='/'
         >
 
             <input type='hidden' name='test-form' value='form v1' />
