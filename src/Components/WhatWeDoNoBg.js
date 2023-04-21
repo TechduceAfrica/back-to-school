@@ -2,7 +2,7 @@ import React from 'react';
 import WhatWeDoSub from './WhatWeDoSub';
 import './WhatWeDoNoBg.css';
 
-const WhatWeDoSubDetails = [
+const WWDSDs = [
     {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
         btstitle: "Back-To-School Supplies Drive",
@@ -22,14 +22,14 @@ export default function WhatWeDoNoBg() {
   return (
     <>
         <div className='what-we-do-nbg-wrapper'>
-            {WhatWeDoSubDetails.map((WhatWeDoSubDetail, index) => 
+            {WWDSDs.map((WWDSD, index) => 
             (
-                <div className='what-we-do-nbg-inner'>
+                <div className='what-we-do-nbg-inner' key={index}>
                     <WhatWeDoSub 
-                        key={index}
-                        img={WhatWeDoSubDetail.btsimg}
-                        title={WhatWeDoSubDetail.btstitle}
-                        text={WhatWeDoSubDetail.btstext}
+                        
+                        img={WWDSD.btsimg}
+                        title={WWDSD.btstitle}
+                        text={WWDSD.btstext}
                     />
                 </div>
             )
