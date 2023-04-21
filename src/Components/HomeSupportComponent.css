@@ -61,7 +61,8 @@
 @media only screen and (max-width: 787px) {
     .home-support-component-wrapper {
         flex-direction: column-reverse;
-        text-align: center
+        text-align: center;
+        padding: 64px 20px;
     }
 
     .home-support-component-wrapper h3 {
@@ -71,7 +72,6 @@
 
     .home-support-component-wrapper h4 {
         font-size: 22px;
-        color: #dddddd;
         margin: 10px 0px;
     }
 }

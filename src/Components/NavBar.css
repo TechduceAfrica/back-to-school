@@ -25,7 +25,57 @@ nav {
 }
 
 nav a {
+    font-size: 1.1rem;
+    padding: 3px 0px;
+
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+    overflow: hidden;
+
     cursor: pointer;
+    transition: color 300ms ease-in 10ms;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #093532;
+    transform: translateX(100%);
+    transition: all 300ms ease-in-out 10ms;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #093532;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out 200ms;
+}
+
+nav a:hover::after {
+    transform: translateX(0);
+}
+
+nav a:hover::before {
+    transform: translateX(0);
+}
+
+nav a:hover {
+    color: #2A6355;
+}
+
+a.active {
+    font-weight: 500;
+    color: #EF8451;
 }
 
 .hamburger, .mobile-nav {
@@ -99,7 +149,9 @@ nav a {
         line-height: 4rem;
     }
 
-    li {
+    .mobile-nav li > a {
+        font-size: 1.2rem;
+        font-weight: 500;
         cursor: pointer;
     }
 

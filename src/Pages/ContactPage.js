@@ -38,7 +38,8 @@ export default function ContactPage() {
         <div style={{ backgroundImage: `url(${`https://backtoschool.ngo/backtoschool-assets/What%20back%20to%20school%20do.png`})`,
                           backgroundSize: 'cover',
                           backgroundPosition: 'center center',
-                          backgroundRepeat: 'no-repeat'}}>
+                          backgroundRepeat: 'no-repeat',
+                          backgroundColor: '#000000'}}>
           <div div className='boxed pad'>
               <WhatWeDoHeroSection 
                 title= "Contact Us"

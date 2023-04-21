@@ -39,7 +39,8 @@ export default function GetInvolvedPage() {
             <div style={{ backgroundImage: `url(${`https://backtoschool.ngo/backtoschool-assets/Get%20Involved%20Hero.png`})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
-                        backgroundRepeat: 'no-repeat'}}>
+                        backgroundRepeat: 'no-repeat',
+                        backgroundColor: '#000000'}}>
                 <div div className='boxed pad'>
                 <WhatWeDoHeroSection 
                     title= "Get Involved"

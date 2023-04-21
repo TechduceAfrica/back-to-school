@@ -10,6 +10,15 @@ body {
 
 @font-face {
   font-family: 'Helvetica Now Display';
+  src: url('./assets/fonts/HelveticaNowDisplay-Regular.ttf');
+  src: local('Helvetica Now Display Regular'), local('HelveticaNowDisplay-Regular'),
+      url('./assets/fonts/HelveticaNowDisplay-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
   src: url('./assets/fonts/HelveticaNowDisplay-Light.ttf');
   src: local('Helvetica Now Display Light'), local('HelveticaNowDisplay-Light'),
       url('./assets/fonts/HelveticaNowDisplay-Light.ttf') format('truetype');
