@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection';
 import ContactMainSection from '../Components/ContactMainSection';
+import Form from '../Components/Form';
 
 export default function ContactPage() {
 
@@ -50,7 +51,7 @@ export default function ContactPage() {
         <div div className='boxed pad'>
           <ContactMainSection />
         </div>
-        
+        <Form />
       </div>
     </>
   )

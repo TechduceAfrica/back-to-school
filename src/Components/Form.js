@@ -1,33 +1,49 @@
-import React from 'react'
+import React from 'react';
+
+const submit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => console.log('Form submitted successfully!'))
+    .catch((error) => console.error(error));
+  };
 
 export default function Form() {
   return (
     <>
-        <form name="hidden_contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-        </form>
+        <form 
+            name="form v1" 
+            method="post" 
+            data-netlify="true" 
+            onSubmit={submit}
+        >
 
-        <form name="hiddencontact" method="post" netlify action="#" data-netlify="true">
-            <input type="hidden" name="form-name" value="form" />
+            <input type='hidden' name='test-form' value='form v1' />
+            
             <div>
-                <label>Name</label>
-                <input type='text' name="name" id="name"  />
+                <label>Name <br />
+                    <input type='text' name="name" id="name"  />
+                </label>
             </div>
 
             <div>
-                <label>Email</label>
-                <input type='email' name="email" id="email"  />
+                <label htmlFor='email'>Email <br />
+                    <input type='email' name="email" id="email"  />
+                </label>
             </div>
 
             <div>
-                <label>Message</label>
-                <input type='textarea' name="message" id="message"  />
+                <label>Message <br />
+                    <input type='textarea' name="message" id="message"  />
+                </label>
             </div>
 
             <div>
-                <input type="submit" value="Submit" />
+                <button type='submit'>Submit</button>
             </div>
         </form>
     </>
