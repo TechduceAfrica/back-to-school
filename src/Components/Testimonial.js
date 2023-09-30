@@ -4,23 +4,28 @@ import './Testimonial.css';
 // testimonial api
 const testimonialsList = [
     {
-        text: `BacktoSchool NGO has changed my life in so many ways. 
-                I never would have been able to attend school without their support, 
-                and now I have a chance to pursue my dreams and 
-                make a better life for myself and my family.`,
+        text: `Back To School NGO embodies the true spirit of community and education. 
+                Their dedication to helping teachers and students is inspiring. With their assistance, 
+                we've created a more conducive learning environment, 
+                and I've seen our students flourish academically and personally.`,
         image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
-        name: "Oluwabunmi Mike",
-        who: "Student Beneficiary",
+        name: "Ogunrinde B. B",
+        who: "Community Leader",
     }, {
-        text: "BacktoSchool NGO has been a vital partner in my education and community assistance. I am delighted to support their initiatives, which have helped kids like me continue in school and follow our aspirations.",
+        text: `I cannot express how grateful I am to Back To School NGO for the incredible work they do. As a parent, 
+                I've struggled to provide my child with the education they deserve. This organization has not only 
+                eased my financial burden but also ensured my child gets the education they need to succeed in life. 
+                Thank you from the bottom of my heart`,
         image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
-        name: "Oluwabunmi mike",
-        who: "Student Beneficiary",
+        name: "Michael O. A",
+        who: "Parent, Beneficiary",
     }, {
-        text: "BacktoSchool NGO has changed my life in so many ways. I never would have been able to attend school without their support, and now I have a chance to pursue my dreams and make a better life for myself and my family.",
+        text: `Back To School NGO is a true partner in education. Their commitment to helping both teachers and 
+                students is commendable. The teaching materials they provide have transformed my classroom, 
+                making learning more engaging and effective. Our students are thriving because of their support.`,
         image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
-        name: "Oluwabunmi mike",
-        who: "Student Beneficiary",
+        name: "Shade A. J",
+        who: "Teacher, Beneficiary",
     }
 ];
 
