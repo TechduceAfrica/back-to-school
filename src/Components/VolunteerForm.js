@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './ContactPageForm.css';
-import { createClient } from '@supabase/supabase-js';
+// import { createClient } from '@supabase/supabase-js';
 
 
 export default function VolunteerForm() {
 
-    const supabaseUrl = 'https://ipntqfirnsrtjvbcyrol.supabase.co';
-    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbnRxZmlybnNydGp2YmN5cm9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE5Njg2MzcsImV4cCI6MTk5NzU0NDYzN30.DBKtij1d3IMKCF6rez9GsAes8uBBTi0RR8r8b73bDnU';
+    // const supabaseUrl = 'https://ipntqfirnsrtjvbcyrol.supabase.co';
+    // const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbnRxZmlybnNydGp2YmN5cm9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE5Njg2MzcsImV4cCI6MTk5NzU0NDYzN30.DBKtij1d3IMKCF6rez9GsAes8uBBTi0RR8r8b73bDnU';
 
-    const supabase = createClient(supabaseUrl, supabaseKey);
+    // const supabase = createClient(supabaseUrl, supabaseKey);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -30,19 +30,19 @@ export default function VolunteerForm() {
             console.log("Email: ", email);
             console.log("Message: ", message);
     
-            try {
-                const { data, error } = await supabase
-                    .from('Volunteer Test Table')
-                    .insert({ name, phone_number: phoneNumber, email, message });
+            // try {
+            //     const { data, error } = await supabase
+            //         .from('Volunteer Test Table')
+            //         .insert({ name, phone_number: phoneNumber, email, message });
     
-                if (error) {
-                    throw error;
-                }
+            //     if (error) {
+            //         throw error;
+            //     }
     
-                console.log('Data inserted successfully:', data);
-            } catch (error) {
-                console.error('Error inserting data:', error);
-            }
+            //     console.log('Data inserted successfully:', data);
+            // } catch (error) {
+            //     console.error('Error inserting data:', error);
+            // }
         }
     };
 

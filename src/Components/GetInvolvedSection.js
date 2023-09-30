@@ -1,7 +1,7 @@
 import React from 'react';
 import './GetInvolvedSection.css';
 import VolunteerForm from './VolunteerForm';
-import PrimaryBtn from './PrimaryBtn';
+// import PrimaryBtn from './PrimaryBtn';
 
 export default function GetInvolvedSection() {
   return (
@@ -52,9 +52,9 @@ export default function GetInvolvedSection() {
                         children in some of Nigeria's poorest states can be 
                         improved significantly as a result of your efforts.
                     </p>
-                    <div className='get-involved-btn'>
+                    {/* <div className='get-involved-btn'>
                         <PrimaryBtn btntext='Give Now' btnlink='/' />
-                    </div>
+                    </div> */}
                 </div>
                 <div>
                     <img src='https://backtoschool.ngo/backtoschool-assets/Fundraise%20for%20back%20to%20school.png' alt='fundraising for back to school' />

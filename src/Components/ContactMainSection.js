@@ -20,7 +20,7 @@ export default function ContactMainSection() {
                         Have a general inquiry? <br/> Email us at info@backtoschool.ngo
                     </p>
                     <p>
-                        Text or call us to get involved in education advocates: <br/> <a href='tel:+2349012345678'>+234 901 234 5678</a>
+                        Text or call us to get involved in education advocates: <br/> <a href='tel:+2349060006734'>+234 906 000 6734</a>
                     </p>
                 </div>
 
@@ -28,7 +28,7 @@ export default function ContactMainSection() {
                     <a href='https://www.instagram.com/' target='_blank' rel="noreferrer"><RiInstagramFill/></a>
                     <a href='https://web.facebook.com/' target='_blank' rel="noreferrer"><RiFacebookCircleFill/></a>
                     <a href='https://twitter.com/' target='_blank' rel="noreferrer"><RiTwitterFill/></a>
-                    <a href='https://whatsapp.com/' target='_blank' rel="noreferrer"><RiWhatsappFill /></a>
+                    <a href='https://wa.me/2349060006734' target='_blank' rel="noreferrer"><RiWhatsappFill /></a>
                 </div>
             </div>
             <div className='contact-main-section-right'>
