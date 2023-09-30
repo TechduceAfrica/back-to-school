@@ -7,7 +7,6 @@ export default function VolunteerForm() {
 
     // const supabaseUrl = 'https://ipntqfirnsrtjvbcyrol.supabase.co';
     // const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbnRxZmlybnNydGp2YmN5cm9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE5Njg2MzcsImV4cCI6MTk5NzU0NDYzN30.DBKtij1d3IMKCF6rez9GsAes8uBBTi0RR8r8b73bDnU';
-
     // const supabase = createClient(supabaseUrl, supabaseKey);
 
     const [name, setName] = useState('');
@@ -24,11 +23,17 @@ export default function VolunteerForm() {
             setErrorMessage('Please enter your name and message');
         } else {
             setIsSubmitted(true);
+            console.log(isSubmitted);
+            const date = new Date();
+            const timeStamp = date;
+
             setErrorMessage('');
             console.log("Name: ", name);
             console.log("Phone Number: ", phoneNumber);
             console.log("Email: ", email);
             console.log("Message: ", message);
+
+            const data = { name, phoneNumber, email, message, timeStamp };
     
             // try {
             //     const { data, error } = await supabase
@@ -43,6 +48,30 @@ export default function VolunteerForm() {
             // } catch (error) {
             //     console.error('Error inserting data:', error);
             // }
+            const postData = async (data) => {
+                try {
+                  const submit = await fetch(
+                    "https://bts-mailserver.onrender.com/form-submitted",
+                    {
+                      method: "POST",
+                      headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                      },
+                      body: JSON.stringify(data),
+                    }
+                  );
+                  const result = await submit.json();
+                  console.log(result);
+                  // if (result.status === 200) {
+                  //   console.log(result.status);
+                  // }
+                } catch (error) {
+                  console.log(error);
+                }
+              };
+        
+              postData(data);
         }
     };
 
