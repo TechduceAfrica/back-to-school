@@ -22,9 +22,10 @@ export default function AboutMissionVisionComponent() {
                 <img src='https://backtoschool.ngo/backtoschool-assets/Back%20to%20school%20vision.png' alt='about back to school vision' />
                 <h3>Our vision</h3>
                 <p>
-                    Our Vision is to live in a society in which 
-                    every kid has access to a good education and has 
-                    the opportunity to reach their full potential.
+                    Equality in Education: We envision a world where education 
+                    is not a privilege but a fundamental right for every child. 
+                    We are committed to breaking down barriers that hinder 
+                    access to quality education.
                 </p>
             </div>
         </div>

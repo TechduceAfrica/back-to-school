@@ -9,8 +9,8 @@ const WhatWeDoSubDetails = [
         btstext: "We collect and buy books, notes, pencils, and uniforms for low-income kids. Giving school supplies can help low-income families and children thrive in school.",
     }, {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
-        btstitle: "Support A Child Campaign",
-        btstext: `Donors can fund a child’s education for a year or more. Sponsoring a kid helps hopeless and low-income families afford decent education for their children.`,
+        btstitle: "Primary Education Digital Library",
+        btstext: `Our Digital Library for Primary Education is a revolutionary initiative aimed at providing free access to educational resources for primary school children.`,
     }, {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
         btstitle: "Teacher Training & Support",

@@ -8,7 +8,7 @@ const testimonialsList = [
                 Their dedication to helping teachers and students is inspiring. With their assistance, 
                 we've created a more conducive learning environment, 
                 and I've seen our students flourish academically and personally.`,
-        image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
+        image: "https://backtoschool.ngo/backtoschool-assets/Back%20to%20school%20NGO%20-%20Ogunrinde.webp",
         name: "Ogunrinde B. B",
         who: "Community Leader",
     }, {
@@ -16,14 +16,14 @@ const testimonialsList = [
                 I've struggled to provide my child with the education they deserve. This organization has not only 
                 eased my financial burden but also ensured my child gets the education they need to succeed in life. 
                 Thank you from the bottom of my heart`,
-        image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
+        image: "https://backtoschool.ngo/backtoschool-assets/Back%20to%20school%20NGO%20-%20Michael.webp",
         name: "Michael O. A",
         who: "Parent, Beneficiary",
     }, {
         text: `Back To School NGO is a true partner in education. Their commitment to helping both teachers and 
                 students is commendable. The teaching materials they provide have transformed my classroom, 
                 making learning more engaging and effective. Our students are thriving because of their support.`,
-        image: "https://backtoschool.ngo/backtoschool-assets/Oluwabunmi%20Mike.png",
+        image: "https://backtoschool.ngo/backtoschool-assets/Back%20to%20School%20NGO%20-%20Shade.webp",
         name: "Shade A. J",
         who: "Teacher, Beneficiary",
     }
@@ -42,7 +42,7 @@ export default function Testimonial() {
                         </p>
 
                         <div className='testimonial-img'>
-                            <img src={testimonialList.image} alt='' />
+                            <img src={testimonialList.image} alt={testimonialList.name} title={testimonialList.name} />
                         </div>
                         
                         <div>

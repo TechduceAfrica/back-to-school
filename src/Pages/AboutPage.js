@@ -47,8 +47,8 @@ export default function AboutPage() {
       }
     },
     "datePublished": "2022-04-10T12:00:00Z",
-    "dateModified": "2022-04-18T12:00:00Z",
-    "articleBody": "Back to School is an Organisation that provides free, high-quality education to disadvantaged children. We reduce primary dropout rates, promote gender equality, and teach children life skills. To reach more people, we work with parents, communities, and local schools and businesses."
+    "dateModified": "2023-09-30T12:00:00Z",
+    "articleBody": "At BackToSchool, we're on a mission to change lives through the power of education. We firmly believe that education is not just a path to success but a fundamental right for every child"
   };
 
   return (
