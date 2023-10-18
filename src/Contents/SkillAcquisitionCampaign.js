@@ -1,0 +1,28 @@
+const SkillAcquisitionCampaign = {
+    InitiativeMainTextTitle: "",
+    InitiativeMainTextText: "",
+    InitiativeSectionOneImg: "",
+    InitiativeSectionOneImgAlt: "",
+    InitiativeSectionOneImgWidth: "",
+    InitiativeSectionOneImgHeight: "",
+    InitiativeSectionOneTitle: "",
+    InitiativeSectionOneTextBody: "",
+    InitiativeSectionTwoTitle: "",
+    InitiativeSectionTwoBTNText: "Support Youth",
+    InitiativeSectionTwoBoxTitleOne: "Educate",
+    InitiativeSectionTwoBoxTextOne: "",
+    InitiativeSectionTwoBoxTitleTwo: "Enable",
+    InitiativeSectionTwoBoxTextTwo: "",
+    InitiativeSectionTwoBoxTitleThree: "Economic Growth",
+    InitiativeSectionTwoBoxTextThree: "",
+    InitiativeWhatWeDoSectionText: "",
+    InitiativeWhatWeDoSectionListOne: "",
+    InitiativeWhatWeDoSectionListTwo: "",
+    InitiativeWhatWeDoSectionListThree: "",
+    InitiativeWhatWeDoSectionImg: "",
+    InitiativeWhatWeDoSectionImgAlt: "",
+    InitiativeWhatWeDoSectionImgWidth: "",
+    InitiativeWhatWeDoSectionImgHeight: "",
+};
+
+export default SkillAcquisitionCampaign;

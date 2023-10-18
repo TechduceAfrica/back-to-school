@@ -10,7 +10,7 @@ import { BrowserRouter,
 import WhatWeDoPage from './Pages/WhatWeDoPage';
 import ContactPage from './Pages/ContactPage';
 import GetInvolvedPage from './Pages/GetInvolvedPage';
-
+import TeacherSupport from './Pages/TeacherSupport';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
             <Route exact path='/whatwedo' element={<WhatWeDoPage />} />
             <Route exact path='/contactus' element={<ContactPage />} />
             <Route exact path='/getinvolved' element={<GetInvolvedPage />} />
+            <Route exact path='/TeacherSupport' element={<TeacherSupport/>} />
           </Routes>
         </div>
         <Footer />

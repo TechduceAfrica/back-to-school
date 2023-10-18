@@ -6,13 +6,20 @@
 
 body {
   display: grid;
+  font-size: 16px;
 }
 
 .maincontainer {
-  /* max-width: 1240px; */
   margin: auto;
   flex-wrap: wrap;
-  /* padding: 0px 20px; */
+}
+
+.content-gap {
+  gap: 20px;
+}
+
+.content-grid {
+  display: grid;
 }
 
 p, a {
@@ -20,13 +27,13 @@ p, a {
   margin: 0px;
   font-family: 'Helvetica Now Display';
   font-style: normal;
-  letter-spacing: 1px;
-  line-height: auto;
+  letter-spacing: 0.05rem;
+  line-height: normal;
   color: #000000;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 a {
@@ -42,25 +49,21 @@ h2, h3, h4 {
 
 h2 {
   font-weight: 500;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 83px
 }
 
 h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 42px;
   letter-spacing: 0.05em;
 }
 
-/* img {
-  display: none;
-} */
-
 
 @media only screen and (max-width: 787px) {
   h3 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 32px;
   }
 }

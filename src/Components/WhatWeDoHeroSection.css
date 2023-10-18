@@ -11,7 +11,6 @@
 }
 
 .what-we-do-hero-wrapper h2 {
-    font-family: 'DM Sans';
     font-style: normal;
     text-transform: capitalize;
     font-weight: 700;
@@ -20,7 +19,6 @@
 }
 
 .what-we-do-hero-wrapper p {
-    font-family: 'Helvetica Now Display';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;

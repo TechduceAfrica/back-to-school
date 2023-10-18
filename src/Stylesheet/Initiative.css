@@ -1,0 +1,111 @@
+.init-main-text {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    padding: 100px 20px 50px;
+}
+
+.initiative-page p {
+    line-height: 1.5rem;
+}
+
+.initiative-page h3 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+}
+
+.initiative-page a {
+    color: #093532;
+    font-family: Helvetica Now Display;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    overflow: hidden;
+}
+
+.initiative-page a::before, .initiative-page a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 180px;
+    background-color: #093532;
+}
+
+.initiative-page a::before {  
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out 200ms;
+}
+
+.initiative-page a::after {
+    left: 0;
+    bottom: 0;
+    transform: translateX(0);
+    transition: all 300ms ease-in-out 10ms;
+}
+
+.initiative-page a:hover::before {
+    transform: translateX(0);
+}
+
+.initiative-page a:hover::after {
+    transform: translateX(120%);
+}
+
+.initiative-page img {
+    width: 100%;
+    height: 100%;
+}
+
+.bts-init-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 40px), 1fr));
+    column-gap: 40px;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.init-sectwo {
+    display: grid;
+    gap: 20px;
+    border-radius: 40px;
+    background: #F2EBE4;
+    padding: 64px 60px;
+}
+
+.init-sectwo > div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.init-sectwo > div:nth-child(1) {
+    align-items: center;
+}
+
+.init-sectwo-box {
+    flex: 1 0 300px;
+    border-radius: 20px;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.init-sectwo-box h4 {
+    color: #093532;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
