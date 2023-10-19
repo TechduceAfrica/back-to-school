@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function InitiativeWhatWeDoSection(props) {
   return (
-    <div>
+    <div className='init-wwd-sec'>
         <div>
-            <h4>What We Do</h4>
+            <h3>What We Do</h3>
             <p>{props.iwdstext}</p>
             <ul>
                 <li>{props.iwdslistone}</li>

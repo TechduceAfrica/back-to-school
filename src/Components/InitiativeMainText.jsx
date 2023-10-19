@@ -3,7 +3,7 @@ import "../Stylesheet/Initiative.css"
 
 export default function InitiativeMainText(props) {
   return (
-    <div className='init-main-text content-gap content-grid'>
+    <div className='init-main-text content-gap'>
         <h3>{props.imttitle}</h3>
         <p>{props.imttext}</p>
     </div>

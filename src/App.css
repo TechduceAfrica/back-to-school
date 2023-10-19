@@ -22,7 +22,7 @@ body {
   display: grid;
 }
 
-p, a {
+p, a, li, ul, ol {
   font-weight: 400;
   margin: 0px;
   font-family: 'Helvetica Now Display';
@@ -32,7 +32,7 @@ p, a {
   color: #000000;
 }
 
-p {
+p, li, ul, ol {
   font-size: 1rem;
 }
 

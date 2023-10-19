@@ -1,0 +1,28 @@
+const SupplyDrive = {
+    InitiativeMainTextTitle: "How We Make a Difference",
+    InitiativeMainTextText: "At BackToSchool, we believe that every child deserves the chance to excel in their education. Our Back-to-School Supply Drive is a heartfelt initiative aimed at ensuring that no child is left behind due to a lack of essential school supplies.",
+    InitiativeSectionOneImg: `${process.env.PUBLIC_URL + '/images/african-descent-teacher-in-kindergarten-school_BacktoschoolNGO.webp'}`,
+    InitiativeSectionOneImgAlt: "Back to school NGO Teacher training and support initiative",
+    InitiativeSectionOneImgWidth: "558px",
+    InitiativeSectionOneImgHeight: "371px",
+    InitiativeSectionOneTitle: "Why This Drive?",
+    InitiativeSectionOneTextBody: "Back To School stands on the principle that every child's education journey shouldn't be hindered by a lack of resources. Through our Supply Drive, we aim to even out the educational playing field for all.",
+    InitiativeSectionTwoTitle: "Why Our Digital Library Matters",
+    InitiativeSectionTwoBTNText: "Get Involved",
+    InitiativeSectionTwoBoxTitleOne: "Collect",
+    InitiativeSectionTwoBoxTextOne: "Generous donations fuel our supply drive, from textbooks to uniforms.",
+    InitiativeSectionTwoBoxTitleTwo: "Distribute",
+    InitiativeSectionTwoBoxTextTwo: "In collaboration with schools in underserved areas, we ensure these supplies reach deserving students.",
+    InitiativeSectionTwoBoxTitleThree: "Impact",
+    InitiativeSectionTwoBoxTextThree: "With the right tools, students can pursue their studies with zest, laying down foundations for success.",
+    InitiativeWhatWeDoSectionText: "We collect and distribute crucial school materials, including textbooks, notebooks, pencils, uniforms, and more. These supplies may seem simple, but they make a world of difference to underprivileged children and their families. By providing these tools, we:",
+    InitiativeWhatWeDoSectionListOne: "Equip children with the essentials for their education journey.",
+    InitiativeWhatWeDoSectionListTwo: "Alleviate the financial burden on families struggling to afford supplies.",
+    InitiativeWhatWeDoSectionListThree: "Cultivate excitement and confidence as children embark on a new school year.",
+    InitiativeWhatWeDoSectionImg: `${process.env.PUBLIC_URL + '/images/Teacher Training_BacktoschoolNGO.webp'}`,
+    InitiativeWhatWeDoSectionImgAlt: "Backtoschool NGO Teacher training and support initiative",
+    InitiativeWhatWeDoSectionImgWidth: "506px",
+    InitiativeWhatWeDoSectionImgHeight: "414px",
+};
+
+export default SupplyDrive;

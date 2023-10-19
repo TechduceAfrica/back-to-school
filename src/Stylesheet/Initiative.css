@@ -2,18 +2,20 @@
     text-align: center;
     display: grid;
     justify-content: center;
-    padding: 100px 20px 50px;
+    padding: 100px 0px 50px;
 }
 
 .initiative-page p {
     line-height: 1.5rem;
+    max-width: 900px;
+    justify-self: center;
 }
 
 .initiative-page h3 {
     font-size: 4rem;
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 15px;
+    line-height: normal;
     letter-spacing: 0px;
 }
 
@@ -68,12 +70,32 @@
     height: 100%;
 }
 
+.init-main-text h3, .bts-init-hero h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.what-we-do-hero-wrapper p {
+    margin-top: 20px;
+}
+
 .bts-init-hero {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(calc(50% - 40px), 1fr));
     column-gap: 40px;
     align-items: center;
     padding: 50px 0px;
+}
+
+.init-sectwo, 
+.init-wwd-sec {
+    display: grid;
+    gap: 20px;
+    border-radius: 40px;
+    padding: 64px 60px;
 }
 
 .init-sectwo {
@@ -86,6 +108,7 @@
 
 .init-sectwo > div {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
 }
@@ -95,17 +118,94 @@
 }
 
 .init-sectwo-box {
-    flex: 1 0 300px;
+    flex: 1 1 200px;
     border-radius: 20px;
     padding: 30px;
+    cursor: default;
     background: #ffffff;
+    filter: drop-shadow(0px 1px 50px rgba(0, 0, 0, 0.15));
+    transition: all 250ms ease-in-out 0ms;
+}
+
+.init-sectwo:hover .init-sectwo-box {
+    filter: drop-shadow(0px 1px 50px rgba(0, 0, 0, 0.05));
+}
+
+.init-sectwo-box:hover {
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.20);
 }
 
 .init-sectwo-box h4 {
     color: #093532;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.init-wwd-sec {
+    background: #2A6355;
+    margin-top: 64px;
+    grid-template-columns: auto auto;
+}
+
+.init-wwd-sec, .init-wwd-sec p, .init-wwd-sec li {
+    color: #ffffff;
+}
+
+.init-wwd-sec ul {
+    margin-block: 10px;
+}
+
+.init-wwd-sec li {
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 787px) {
+
+    .init-main-text {
+        padding: 50px 0px 0px;
+    }
+
+    .initiative-page h2, 
+    .initiative-page h3 {
+        font-size: 1.8rem !important;
+        line-height: normal !important;
+        margin-bottom: 0px;
+    }
+
+    .initiative-page a {
+        font-size: 1rem;
+    }
+
+    .init-main-text h3, .bts-init-hero h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .bts-init-hero, .init-wwd-sec {
+        grid-template-columns: auto;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .content-gap {
+        gap: 10px;
+    }
+
+    .init-sectwo, .init-wwd-sec {
+        padding: 64px 20px;
+    }
+
+    .init-sectwo > div:nth-child(1) {
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .init-wwd-sec ul {
+        text-align: left;
+        list-style: disc;
+    }
 }

@@ -11,6 +11,7 @@ import WhatWeDoPage from './Pages/WhatWeDoPage';
 import ContactPage from './Pages/ContactPage';
 import GetInvolvedPage from './Pages/GetInvolvedPage';
 import TeacherSupport from './Pages/TeacherSupport';
+import SupplyDrive from './Pages/SupplyDrivePage';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             <Route exact path='/whatwedo' element={<WhatWeDoPage />} />
             <Route exact path='/contactus' element={<ContactPage />} />
             <Route exact path='/getinvolved' element={<GetInvolvedPage />} />
-            <Route exact path='/TeacherSupport' element={<TeacherSupport/>} />
+            <Route exact path='/teacher-training-and-support' element={<TeacherSupport/>} />
+            <Route exact path='/back-to-school-supply-drive' element={<SupplyDrive/>} />
           </Routes>
         </div>
         <Footer />
