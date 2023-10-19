@@ -144,9 +144,10 @@ a.active {
         box-shadow: 0px 3px 10px #0000003a;
     }
 
-    ul {
+    .mobile-nav ul {
         list-style: none;
-        line-height: 4rem;
+        display: grid;
+        gap: 40px;
     }
 
     .mobile-nav li > a {
@@ -163,4 +164,4 @@ a.active {
         opacity: 0;
     }
 
-  }
+}
