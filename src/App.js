@@ -12,6 +12,7 @@ import ContactPage from './Pages/ContactPage';
 import GetInvolvedPage from './Pages/GetInvolvedPage';
 import TeacherSupport from './Pages/TeacherSupport';
 import SupplyDrive from './Pages/SupplyDrivePage';
+import SponsorAChild from './Pages/SponsorAChild'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route exact path='/getinvolved' element={<GetInvolvedPage />} />
             <Route exact path='/teacher-training-and-support' element={<TeacherSupport/>} />
             <Route exact path='/back-to-school-supply-drive' element={<SupplyDrive/>} />
+            <Route exact path='/sponsor-a-child-campaign' element={<SponsorAChild/>} />
           </Routes>
         </div>
         <Footer />
