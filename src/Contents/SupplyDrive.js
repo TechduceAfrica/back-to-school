@@ -1,7 +1,7 @@
 const SupplyDrive = {
     InitiativeMainTextTitle: "How We Make a Difference",
     InitiativeMainTextText: "At BackToSchool, we believe that every child deserves the chance to excel in their education. Our Back-to-School Supply Drive is a heartfelt initiative aimed at ensuring that no child is left behind due to a lack of essential school supplies.",
-    InitiativeSectionOneImg: `${process.env.PUBLIC_URL + '/images/african-descent-teacher-in-kindergarten-school_BacktoschoolNGO.webp'}`,
+    InitiativeSectionOneImg: `${process.env.PUBLIC_URL + '/images/back to school supply drive.webp'}`,
     InitiativeSectionOneImgAlt: "Back to school NGO Teacher training and support initiative",
     InitiativeSectionOneImgWidth: "558px",
     InitiativeSectionOneImgHeight: "371px",
@@ -19,7 +19,7 @@ const SupplyDrive = {
     InitiativeWhatWeDoSectionListOne: "Equip children with the essentials for their education journey.",
     InitiativeWhatWeDoSectionListTwo: "Alleviate the financial burden on families struggling to afford supplies.",
     InitiativeWhatWeDoSectionListThree: "Cultivate excitement and confidence as children embark on a new school year.",
-    InitiativeWhatWeDoSectionImg: `${process.env.PUBLIC_URL + '/images/Teacher Training_BacktoschoolNGO.webp'}`,
+    InitiativeWhatWeDoSectionImg: `${process.env.PUBLIC_URL + '/images/Back to School NGO Supply Drive.webp'}`,
     InitiativeWhatWeDoSectionImgAlt: "Backtoschool NGO Teacher training and support initiative",
     InitiativeWhatWeDoSectionImgWidth: "506px",
     InitiativeWhatWeDoSectionImgHeight: "414px",

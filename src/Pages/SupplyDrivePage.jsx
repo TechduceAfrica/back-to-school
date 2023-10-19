@@ -22,7 +22,7 @@ export default function SupplyDrivePage() {
 
     // Page title and make sure page scroll back to up on appearance
     useEffect(() => {
-        document.title = 'Back-to-School Supply Drive | Empowering Young Minds';
+        document.title = 'Back to School Supply Drive | Empowering Young Minds';
         window.scrollTo(0, 0);
     }, []);
 
@@ -30,8 +30,8 @@ export default function SupplyDrivePage() {
     const schema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Back-to-School Supply Drive | Empowering Young Minds",
-        "image": "https://backtoschoolngo.com/images/Teacher%20Training_BacktoschoolNGO.webp",
+        "headline": "Back to School NGO Supply Drive | Empowering Young Minds",
+        "image": "https://backtoschoolngo.com/images/Back%20to%20School%20NGO%20Supply%20Drive.webp",
         "author": {
         "@type": "Person",
         "name": "Techduce Africa"
@@ -56,10 +56,10 @@ export default function SupplyDrivePage() {
         {/* Open graph tag for social media */}
         <Helmet>
             <script type="application/ld+json">{JSON.stringify(schema)}</script>
-            <title>Back-to-School Supply Drive | Empowering Young Minds</title>
+            <title>Back to School Supply Drive | Empowering Young Minds</title>
             <meta property="og:title" content="Back-to-School Supply Drive" />
             <meta property="og:description" content="Our Back-to-School Supply Drive is a heartfelt initiative aimed at ensuring that no child is left behind due to a lack of essential school supplies..." />
-            <meta property="og:image" content="https://backtoschoolngo.com/images/Teacher%20Training_BacktoschoolNGO.webp" />
+            <meta property="og:image" content="https://backtoschoolngo.com/images//Back%20to%20School%20NGO%20Supply%20Drive.webp" />
             <meta property="og:url" content="https://www.backtoschoolngo.com/back-to-school-supply-drive" />
         </Helmet>
 
@@ -70,7 +70,7 @@ export default function SupplyDrivePage() {
                           backgroundColor: '#000000'}}>
           <div div className='boxed pad'>
               <WhatWeDoHeroSection 
-                title= "Back-to-School Supply Drive"
+                title= "Back to School Supply Drive"
                 text= "Empowering young minds with the tools to succeed."/>    
           </div>
         </div>
