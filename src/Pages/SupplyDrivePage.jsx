@@ -59,7 +59,7 @@ export default function SupplyDrivePage() {
             <title>Back to School Supply Drive | Empowering Young Minds</title>
             <meta property="og:title" content="Back-to-School Supply Drive" />
             <meta property="og:description" content="Our Back-to-School Supply Drive is a heartfelt initiative aimed at ensuring that no child is left behind due to a lack of essential school supplies..." />
-            <meta property="og:image" content="https://backtoschoolngo.com/images//Back%20to%20School%20NGO%20Supply%20Drive.webp" />
+            <meta property="og:image" content="https://backtoschoolngo.com/images/Back%20to%20School%20NGO%20Supply%20Drive.webp" />
             <meta property="og:url" content="https://www.backtoschoolngo.com/back-to-school-supply-drive" />
         </Helmet>
 

@@ -31,7 +31,7 @@ export default function SponsorAChild() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Back to School NGO Sponsor a Child Campaign | Empowering Young Minds",
-        "image": "https://backtoschoolngo.com/images/Back%20to%20School%20NGO%20Supply%20Drive.webp",
+        "image": "https://backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp",
         "author": {
         "@type": "Person",
         "name": "Techduce Africa"
@@ -59,8 +59,8 @@ export default function SponsorAChild() {
                 <title>Back to School Sponsor a Child Campaign | Empowering Young Minds</title>
                 <meta property="og:title" content="Back-to-School Sponsor a Child Campaign" />
                 <meta property="og:description" content="Our Sponsor a Child Campaign is a powerful way to make a lasting impact on a child's education..." />
-                <meta property="og:image" content="https://backtoschoolngo.com/images//Back%20to%20School%20NGO%20Supply%20Drive.webp" />
-                <meta property="og:url" content="https://www.backtoschoolngo.com/back-to-school-supply-drive" />
+                <meta property="og:image" content="https://backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp" />
+                <meta property="og:url" content="https://www.backtoschoolngo.com/sponsor-a-child-campaign" />
             </Helmet>
 
             <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp'})`,
