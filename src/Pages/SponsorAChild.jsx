@@ -22,7 +22,7 @@ export default function SponsorAChild() {
 
     // Page title and make sure page scroll back to up on appearance
     useEffect(() => {
-        document.title = 'Back to School Sponsor a Child Campaign | Empowering Young Minds';
+        document.title = 'Sponsor a Child Campaign | Empowering Young Minds';
         window.scrollTo(0, 0);
     }, []);
 
@@ -30,7 +30,7 @@ export default function SponsorAChild() {
     const schema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Back to School NGO Sponsor a Child Campaign | Empowering Young Minds",
+        "headline": "Sponsor a Child Campaign | Empowering Young Minds",
         "image": "https://backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp",
         "author": {
         "@type": "Person",
@@ -56,8 +56,8 @@ export default function SponsorAChild() {
             {/* Open graph tag for social media */}
             <Helmet>
                 <script type="application/ld+json">{JSON.stringify(schema)}</script>
-                <title>Back to School Sponsor a Child Campaign | Empowering Young Minds</title>
-                <meta property="og:title" content="Back-to-School Sponsor a Child Campaign" />
+                <title>Sponsor a Child Campaign | Empowering Young Minds</title>
+                <meta property="og:title" content="Sponsor a Child Campaign" />
                 <meta property="og:description" content="Our Sponsor a Child Campaign is a powerful way to make a lasting impact on a child's education..." />
                 <meta property="og:image" content="https://backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp" />
                 <meta property="og:url" content="https://www.backtoschoolngo.com/sponsor-a-child-campaign" />
