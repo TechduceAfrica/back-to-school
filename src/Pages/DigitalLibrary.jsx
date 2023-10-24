@@ -32,7 +32,7 @@ const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Digital Library | Access to Quality Education Should Be Unrestricted",
-    "image": "https://backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp",
+    "image": "https://backtoschoolngo.com/images/Back%20to%20school%20NGO%201_BacktoschoolNGO.webp",
     "author": {
     "@type": "Person",
     "name": "Techduce Africa"
@@ -59,7 +59,7 @@ const schema = {
         <title>Digital Library | Access to Quality Education Should Be Unrestricted</title>
         <meta property="og:title" content="Digital Library" />
         <meta property="og:description" content="Welcome to the BackToSchool Digital Library, a gateway to limitless educational resources for children of all ages..." />
-        <meta property="og:image" content="https://www.backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp" />
+        <meta property="og:image" content="https://backtoschoolngo.com/images/Back%20to%20school%20NGO%201_BacktoschoolNGO.webp" />
         <meta property="og:url" content="https://www.backtoschoolngo.com/digital-library" />
       </Helmet>
       <div style={{ backgroundImage: `url(${`public/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp`})`,

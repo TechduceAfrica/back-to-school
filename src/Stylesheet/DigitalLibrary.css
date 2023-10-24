@@ -102,6 +102,7 @@
 .NGO__dl__sec3-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -124,12 +125,17 @@
 
 details p {
     padding: 20px;
+    border-radius: 5px;
     color: black;
     background-color: #f2ebe4;
 }
 
 .NGO__dl__sec3-content > div {
-    flex: 0 1 calc(45% - 40px);
+    flex: 0 1 calc(49% - 40px);
+}
+
+.NGO__dl__sec3-content > div:first-child {
+    align-self: flex-start;
 }
 
 .NGO-dl__cta span {

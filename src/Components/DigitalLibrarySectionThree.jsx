@@ -11,23 +11,23 @@ export default function DigitalLibrarySectionThree() {
         </div>
         <div className='NGO__dl__sec3-content'>
             <div>
-                <details>
+                <details name="accordion">
                     <summary>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleOne}</summary>
                     <p>{DigitalLibraryContent.DigitalLibrarySectionThreeTextOne}</p>
                 </details>
-                <details>
+                <details name="accordion">
                     <summary>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleTwo}</summary>
                     <p>{DigitalLibraryContent.DigitalLibrarySectionThreeTextTwo}</p>
                 </details>
-                <details>
+                <details name="accordion">
                     <summary>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleThree}</summary>
                     <p>{DigitalLibraryContent.DigitalLibrarySectionThreeTextThree}</p>
                 </details>
-                <details>
+                <details name="accordion">
                     <summary>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleFour}</summary>
                     <p>{DigitalLibraryContent.DigitalLibrarySectionThreeTextFour}</p>
                 </details>
-                <details>
+                <details name="accordion">
                     <summary>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleFive}</summary>
                     <p>{DigitalLibraryContent.DigitalLibrarySectionThreeTextFive}</p>
                 </details>

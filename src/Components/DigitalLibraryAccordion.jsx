@@ -1,26 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DigitalLibraryContent from '../Contents/DigitalLibrary'
+import '../Stylesheet/DigitalLibraryAccordion.css'
 
-export default function Accordion() {
-  const [toggle, setToggle] = useState(null);
-
-  const handleToggle = (id) => {
-    setToggle((prevState) => (prevState === id ? null : id));
-  };
+export default function DigitalLibraryAccordion () {
 
   return (
     <div>
-      <div onClick={() => handleToggle(1)}>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleOne}</div>
-      {toggle === 1 && <div>{DigitalLibraryContent.DigitalLibrarySectionThreeTextOne}</div>}
-
-      <div onClick={() => handleToggle(2)}>Accordion Header 2</div>
-      {toggle === 2 && <div>Accordion Body 2</div>}
-
-      <div onClick={() => handleToggle(3)}>Accordion Header 2</div>
-      {toggle === 2 && <div>Accordion Body 2</div>}
-
-      <div onClick={() => handleToggle(4)}>Accordion Header 2</div>
-      {toggle === 2 && <div>Accordion Body 2</div>}
+      <section role="group">
+        <details name="accordion">
+          <summary>{DigitalLibraryContent.DigitalLibrarySectionThreeTitleOne}</summary>
+          <span>
+            {DigitalLibraryContent.DigitalLibrarySectionThreeTextOne}
+          </span>
+        </details>
+        <details name="accordion">
+          <summary>Accordion</summary>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            et sed consectetur aperiam repellendus, accusantium, facere id earum
+            omnis autem aspernatur perferendis labore ad obcaecati eveniet quasi
+            fuga nemo qui.
+          </span>
+        </details>
+        <details name="accordion">
+          <summary>Pattern</summary>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            et sed consectetur aperiam repellendus, accusantium, facere id earum
+            omnis autem aspernatur perferendis labore ad obcaecati eveniet quasi
+            fuga nemo qui.
+          </span>
+        </details>
+      </section>
     </div>
   );
-}
+};
+
