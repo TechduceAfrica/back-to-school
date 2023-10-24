@@ -15,6 +15,7 @@ import SupplyDrive from './Pages/SupplyDrivePage';
 import SponsorAChild from './Pages/SponsorAChild';
 import SkillAcquisitionCampaign from './Pages/SkillAcquisitionCampaign';
 import ProgramsAndInitiatives from './Pages/ProgramsAndInitiatives';
+import DigitalLibrary from './Pages/DigitalLibrary';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route exact path='/sponsor-a-child-campaign' element={<SponsorAChild/>} />
             <Route exact path='/skill-acquisition-campaign' element={<SkillAcquisitionCampaign/>} />
             <Route exact path='/ngo-programs-and-initiatives' element={<ProgramsAndInitiatives/>} />
+            <Route exact path='/digital-library' element={<DigitalLibrary/>} />
           </Routes>
         </div>
         <Footer />

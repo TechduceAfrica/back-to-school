@@ -1,0 +1,198 @@
+.NGO-dl__section-one, 
+.NGO-dl__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-block: 100px;
+}
+
+.NGO-dl__sec1-img {
+    flex: 0 1 100%;
+}
+
+.NGO-dl__sec1, 
+.NGO-dl__cta > div {
+    flex: 1 0 calc(50% - 40px);
+}
+
+.NGO-dl__section-one img, 
+.NGO-dl__cta img {
+    max-width: 559px;
+    width: 100%;
+    height: 100%;
+}
+
+.NGO-dl__section-one h3 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.NGO-dl__section-one h5 {
+    font-family: Helvetica Now Display;
+    color: #2A6355;
+    text-transform: capitalize;
+    margin-block: 10px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0.84px;
+}
+
+.NGO-dl__section-one p, 
+.NGO-dl__sec2__box p,
+.NGO-dl__cta p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+.NGO-dl__section-two {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.NGO-dl__section-two, 
+.NGO-dl__cta {
+    background-color: #f2ebe4;
+    border-radius: 40px;
+    padding: 64px 60px;
+}
+
+.NGO-dl__sec2__box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(0 1px 50px rgba(0,0,0,.1));
+    filter: drop-shadow(0 1px 50px rgba(0,0,0,.1));
+    transition: all 300ms ease-in-out 0ms;
+    cursor: default;
+}
+
+.NGO-dl__sec2__box:hover {
+    box-shadow: 0 1px 50px rgba(0,0,0,.15);
+}
+
+.NGO-dl__sec2__box h4 {
+    color: #2A6355;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.NGO__dl__sec3 {
+    background-color: #2A6355;
+    border-radius: 40px;
+    padding: 64px 60px;
+    color: #ffffff;
+    margin-block: 100px;
+}
+
+.NGO__dl__sec3-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.NGO__dl__sec3-content summary {
+    font-size: 1.6rem;
+    color: #B5E0AC;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 500ms ease-in-out 0ms;
+}
+
+.NGO__dl__sec3-content summary:hover {
+    color: #f2ebe4;
+}
+
+details p {
+    padding: 20px;
+    color: black;
+    background-color: #f2ebe4;
+}
+
+.NGO__dl__sec3-content > div {
+    flex: 0 1 calc(45% - 40px);
+}
+
+.NGO-dl__cta span {
+    font-family: DM Sans;
+    font-weight: 900;
+    color: #EF8451;
+    font-size: clamp(1.4rem, 0.8727rem + 1.4545vw, 2rem);
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.NGO-dl__cta h3 {
+    text-transform: capitalize;
+}
+
+.NGO-dl__cta .primary-btn-wrapper {
+    margin-top: 20px;
+}
+
+.NGO-dl__cta .primary-btn-wrapper a {
+    font-size: 0.8rem;
+    color: #f2ebe4;
+}
+
+.NGO-dl__cta .primary-btn-wrapper a:hover {
+    color: #EF8451;
+}
+
+.NGO-dl__cta .primary-btn-wrapper a::after,
+.NGO-dl__cta .primary-btn-wrapper a::before {
+    display: none;
+}
+
+@media (max-width:787px) {
+    .NGO-dl__section-one, 
+    .NGO-dl__cta {
+        flex-direction: column;
+        text-align: center;
+        padding-block: 50px;
+    }
+
+    .NGO-dl__section-one h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .NGO-dl__section-two {
+        align-items: stretch;
+        gap: 20px;
+        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 64px 20px;
+    }
+
+    .NGO-dl__cta {
+        padding: 64px 20px;
+    }
+
+    .NGO-dl__section-two div:first-child {
+        align-self: center;
+    }
+
+    .NGO-dl__cta .primary-btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}

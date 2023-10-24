@@ -54,7 +54,7 @@ export default function ProgramsAndInitiatives() {
         },
         "datePublished": "2022-04-10T12:00:00Z",
         "dateModified": "2023-10-19T12:00:00Z",
-        "articleBody": "Our Sponsor a Child Campaign is a powerful way to make a lasting impact on a child's education..."
+        "articleBody": "Back to School NGO have lunched several programs and Initiatives to help disadvantaged children in different aspects to help them grow intellectually which generally improve the quality of lives in the community in general..."
     };
 
 
@@ -65,9 +65,9 @@ export default function ProgramsAndInitiatives() {
                 <script type="application/ld+json">{JSON.stringify(schema)}</script>
                 <title>BacktoSchool NGO Programs and Initiatives | Empowering Young Minds</title>
                 <meta property="og:title" content="BacktoSchool NGO Programs and Initiatives" />
-                <meta property="og:description" content="Our Sponsor a Child Campaign is a powerful way to make a lasting impact on a child's education..." />
+                <meta property="og:description" content="Back to School NGO have lunched several programs and Initiatives to help disadvantaged children in different aspects to help them grow intellectually which generally improve the quality of lives in the community in general..." />
                 <meta property="og:image" content="https://backtoschoolngo.com/images/BacktoschoolNGO%20Sponsor%20a%20Child%20Campaign.webp" />
-                <meta property="og:url" content="https://www.backtoschoolngo.com/sponsor-a-child-campaign" />
+                <meta property="og:url" content="https://backtoschoolngo.com/ngo-programs-and-initiatives" />
             </Helmet>
             <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp'})`,
                                 backgroundSize: 'cover',
