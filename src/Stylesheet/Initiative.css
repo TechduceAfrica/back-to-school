@@ -43,7 +43,8 @@
     text-transform: uppercase;
 }
 
-.init-list-items p {
+.init-list-items p, 
+.initiative-page p {
     line-height: 28px;
 }
 

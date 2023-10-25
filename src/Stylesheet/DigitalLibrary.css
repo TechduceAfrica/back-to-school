@@ -67,6 +67,11 @@
     padding: 64px 60px;
 }
 
+.NGO-dl__section-two h3, 
+.NGO__dl__sec3 h3 {
+    text-transform: capitalize;
+}
+
 .NGO-dl__sec2__box {
     background-color: #ffffff;
     padding: 30px;
@@ -137,7 +142,7 @@ details p {
 }
 
 .NGO__dl__sec3-content > div {
-    flex: 0 1 calc(49% - 40px);
+    flex: 0 1 calc(50% - 20px);
 }
 
 .NGO__dl__sec3-content > div:first-child {
@@ -192,7 +197,25 @@ details p {
         gap: 20px;
         text-align: center;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    }
+
+    .NGO-dl__section-two, 
+    .NGO__dl__sec3 {
         padding: 64px 20px;
+    }
+
+    .NGO__dl__sec3-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .NGO__dl__sec3 h3 {
+        text-align: center;
+    }
+
+    .NGO__dl__sec3-content summary {
+        font-size: 1.2rem;
     }
 
     .NGO-dl__cta {

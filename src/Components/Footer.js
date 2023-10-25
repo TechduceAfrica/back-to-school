@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Footer.css';
 import { RiInstagramFill, RiFacebookCircleFill, RiTwitterFill, RiWhatsappFill } from "react-icons/ri";
 
@@ -25,14 +26,14 @@ export default function Footer() {
           </div>
 
           <div className='footer-btns-wrapper'>
-            <a href='./whatwedo' className='pri-btn'>Browse campaign</a>
-            <a href='./getinvolved'>Get involved</a>
+            <NavLink to='./whatwedo' className='pri-btn'>Browse campaign</NavLink>
+            <NavLink to='./getinvolved'>Get involved</NavLink>
           </div>
         </div>
       </div>
       <div className='footer-credit'>
         <p>
-          © BacktoSchool 2023 | All Rights Reserved | Designed by <a href='https://techduce.africa/' title='Techduce Africa Web Link'>Techduce Africa</a>
+          © BacktoSchool 2023 | All Rights Reserved | Designed by <a href='https://techduce.africa/' target='_blank' rel="noreferrer" title='Techduce Africa Web Link'>Techduce Africa</a>
         </p>
       </div>
     </>

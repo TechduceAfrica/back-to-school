@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './WhatWeDoSub.css';
 
 export default function WhatWeDoSub(props) {
@@ -10,7 +11,7 @@ export default function WhatWeDoSub(props) {
             </div>
             <h3>{props.title}</h3>
             <p>{props.text}</p>
-            <a href='./whatwedo'  target='_self' rel='noreferrer'>know more</a>
+            <NavLink to='/ngo-programs-and-initiatives'  target='_self' rel='noreferrer'>know more</NavLink>
         </div>
     </>
   )

@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     background-color: #ffffff;
+    box-shadow: 0px 8px 20px -5px #00000017;
     z-index: 99;
 }
 
@@ -12,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0px 8px 20px -5px #00000017;
+    
     margin: auto;
     max-width: 1240px;
 }
@@ -22,6 +23,7 @@ nav {
     display: flex;
     gap: 35px;
     justify-content: flex-end;
+    align-items: center;
 }
 
 nav a {
@@ -33,6 +35,7 @@ nav a {
     overflow: hidden;
     cursor: pointer;
     transition: color 300ms ease-in 10ms;
+    z-index: 20;
 }
 
 nav a::after {
@@ -74,6 +77,70 @@ nav a:hover {
 a.active {
     font-weight: 500;
     color: #EF8451;
+}
+
+.main__menu a::after, 
+.main__menu a::before {
+    display: none;
+}
+
+.main__menu {
+    position: relative;
+}
+
+.main__menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.main__menu svg {
+    width: 0.8rem;
+}
+
+.sub__menu {
+    position: absolute;
+    width: 300px;
+    top: 22px;
+    left: -20px;
+    background-color: #ffffff;
+    padding: 40px 0px 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+    gap: 10px;
+    display: grid;
+    height: 0;
+    transform: translateY(-30px);
+    box-shadow: 0px 5px 20px -10px #0000002a;
+    transition: all 500ms ease-in-out 0ms;
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.main__menu:hover .sub__menu {
+    opacity: 1;
+    height: 300px;
+    z-index: 1;
+    transform: translateY(0px);
+}
+
+.sub__menu > div {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sub__menu > div, .sub__menu > div a {
+    transition: all 300ms ease-in-out 0ms;
+}
+
+.sub__menu > div:hover {
+    background-color: #EF8451;
+}
+
+.sub__menu > div:hover a {
+    color: #ffffff;
 }
 
 .hamburger, .mobile-nav {
@@ -128,7 +195,7 @@ a.active {
 
     .mobile-nav {
         display: block;
-        width: 70%;
+        width: 85%;
         height: 100%;
         position: fixed;
         top: 0;
@@ -146,6 +213,7 @@ a.active {
         list-style: none;
         display: grid;
         gap: 40px;
+        padding-left: 20px;
     }
 
     .mobile-nav li > a {
@@ -160,6 +228,11 @@ a.active {
 
     .logo.hide {
         opacity: 0;
+    }
+
+    .mobile-nav .m-sub__menu {
+        margin-left: 10px;
+        margin-top: -10px;
     }
 
 }

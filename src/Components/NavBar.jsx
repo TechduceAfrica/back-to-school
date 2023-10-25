@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './NavBar.css'
 import Logo from "./Logo.svg";
 import { NavLink } from 'react-router-dom';
+import { FaChevronDown } from "react-icons/fa";
 
 export default function NavBar() {
 
@@ -58,6 +59,26 @@ export default function NavBar() {
             <NavLink to='.'>Home</NavLink>
             <NavLink to='./ourstory'>Our Story</NavLink>
             <NavLink to='./whatwedo'>What We Do</NavLink>
+            <div className='main__menu'>
+              <NavLink to='./ngo-programs-and-initiatives'>Programs<FaChevronDown/></NavLink>
+                <div className='sub__menu'>
+                  <div>
+                    <NavLink to='/back-to-school-supply-drive'>Supply Drive</NavLink>
+                  </div>
+                  <div>
+                    <NavLink to='/sponsor-a-child-campaign'>Sponsor a Child</NavLink>
+                  </div>
+                  <div>
+                    <NavLink to='/teacher-training-and-support'>Teacher Training & Support</NavLink>                   
+                  </div>
+                  <div>
+                    <NavLink to='/skill-acquisition-campaign'>Skill Acquisition</NavLink>
+                  </div>
+                  <div>
+                    <NavLink to='/digital-library'>Digital Library</NavLink>                                         
+                  </div>
+                </div>
+            </div>
             <NavLink to='./contactus'>Contact Us</NavLink>
             <NavLink to='./getinvolved'>Get Involved</NavLink>
           </nav>
@@ -79,6 +100,24 @@ export default function NavBar() {
               <li>
                 <NavLink to='./whatwedo' onClick={handleHamburgerClick}>What We Do</NavLink>
               </li>
+              <li>
+                <NavLink to='./ngo-programs-and-initiatives' onClick={handleHamburgerClick}>Programs & Initiatives</NavLink>
+              </li>   
+                <li className='m-sub__menu'>
+                  <NavLink to='/back-to-school-supply-drive' onClick={handleHamburgerClick}>Supply Drive</NavLink>
+                </li>
+                <li className='m-sub__menu'>
+                  <NavLink to='/sponsor-a-child-campaign' onClick={handleHamburgerClick}>Sponsor a Child</NavLink>
+                </li>
+                <li className='m-sub__menu'>
+                  <NavLink to='/teacher-training-and-support' onClick={handleHamburgerClick}>Teacher Training & Support</NavLink>
+                </li> 
+                <li className='m-sub__menu'>
+                  <NavLink to='/skill-acquisition-campaign' onClick={handleHamburgerClick}>Skill Acquisition</NavLink>
+                </li>
+                <li className='m-sub__menu'>
+                  <NavLink to='/digital-library' onClick={handleHamburgerClick}>Digital Library</NavLink>
+                </li>                                         
               <li>
                 <NavLink to='./contactus' onClick={handleHamburgerClick}>Contact Us</NavLink>
               </li>

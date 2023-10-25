@@ -62,7 +62,7 @@ const schema = {
         <meta property="og:image" content="https://backtoschoolngo.com/images/Back%20to%20school%20NGO%201_BacktoschoolNGO.webp" />
         <meta property="og:url" content="https://www.backtoschoolngo.com/digital-library" />
       </Helmet>
-      <div style={{ backgroundImage: `url(${`public/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp`})`,
+      <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp'})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
                         backgroundRepeat: 'no-repeat',
