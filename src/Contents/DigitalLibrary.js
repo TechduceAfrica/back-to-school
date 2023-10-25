@@ -27,14 +27,18 @@ const DigitalLibraryContent = {
     DigitalLibrarySectionThreeTextOne: `Explore: Our digital library hosts a vast collection of resources, including textbooks, 
                                         interactive lessons, educational videos, and more. These materials cover a wide range of 
                                         subjects and topics.`,
-    DigitalLibrarySectionThreeTitleTwo: `Vast resource collection`,
-    DigitalLibrarySectionThreeTextTwo: `2`,
-    DigitalLibrarySectionThreeTitleThree: `Vast resource collection`,
-    DigitalLibrarySectionThreeTextThree: `3`,
-    DigitalLibrarySectionThreeTitleFour: `Vast resource collection`,
-    DigitalLibrarySectionThreeTextFour: `4`,
-    DigitalLibrarySectionThreeTitleFive: `Vast resource collection`,
-    DigitalLibrarySectionThreeTextFive: `Five`,
+    DigitalLibrarySectionThreeTitleTwo: `User-Friendly Interface`,
+    DigitalLibrarySectionThreeTextTwo: `Access: Our user-friendly interface ensures easy navigation, making it accessible to children 
+                                        and learners of all ages. It's designed with simplicity and effectiveness in mind.`,
+    DigitalLibrarySectionThreeTitleThree: `Continuous Updates`,
+    DigitalLibrarySectionThreeTextThree: `Stay Current: We continuously update our digital library with the latest educational materials, 
+                                            ensuring that learners have access to up-to-date information.`,
+    DigitalLibrarySectionThreeTitleFour: `Supportive Community`,
+    DigitalLibrarySectionThreeTextFour: `Connect: Join a supportive community of learners, parents, and educators who share a passion for 
+                                            education and knowledge sharing.`,
+    DigitalLibrarySectionThreeTitleFive: `Interactive Learning`,
+    DigitalLibrarySectionThreeTextFive: `Engage: Many of our resources offer interactive features, enabling learners to actively engage 
+                                            with the content and enhance their understanding.`,
     DigitalLibrarySectionThreeImg: `${process.env.PUBLIC_URL + '/images/Supportive community - Back to school NGO_BacktoschoolNGO.webp'}`,
     DigitalLibrarySectionThreeImgAlt: "Digital library hosts a vast collection of resources, including textbooks",
     DigitalLibrarySectionThreeImgWidth: "545px",

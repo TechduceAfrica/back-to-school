@@ -123,10 +123,16 @@
     color: #f2ebe4;
 }
 
+details {
+    margin-block: 0.5rem;
+}
+
 details p {
     padding: 20px;
     border-radius: 5px;
     color: black;
+    margin-block: 0.5rem;
+    line-height: 28px;
     background-color: #f2ebe4;
 }
 
