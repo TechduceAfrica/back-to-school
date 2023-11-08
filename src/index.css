@@ -77,3 +77,21 @@ code {
 .pad {
   padding: 0px 20px;
 }
+
+.about__page .init-sectwo > div:nth-child(1) {
+  justify-content: center;
+}
+
+.about__page .init-sectwo > div:nth-child(1) h3 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width:787px) {
+  .about__page .init-sectwo > div:nth-child(1) h3 {
+    font-size: 1.8rem;
+
+  }
+}

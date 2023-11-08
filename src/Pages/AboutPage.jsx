@@ -1,11 +1,13 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection';
+import InitiativeMainText from '../Components/InitiativeMainText';
 import WhatWeDoSubGroup from '../Components/WhatWeDoSubGroup.js';
-import AboutPageHeroSection from '../Components/AboutPageHeroSection.js';
-import AboutMissionVisionComponent from '../Components/AboutMissionVisionComponent.js';
-import AboutVideoComponent from '../Components/AboutVideoComponent.js';
-import AboutPageWhatWeDoComponent from '../Components/AboutPageWhatWeDoComponent.js';
+import AboutPageHeroSection from '../Components/AboutPageHeroSection';
+import InitiativeSectionTwo from '../Components/InitiativeSectionTwo';
+import AboutPageWhatWeDoComponent from '../Components/AboutPageWhatWeDoComponent';
+import About from '../Contents/About.js'
 // import '../index.css';
 
 export default function AboutPage() {
@@ -47,12 +49,12 @@ export default function AboutPage() {
       }
     },
     "datePublished": "2022-04-10T12:00:00Z",
-    "dateModified": "2023-09-30T12:00:00Z",
+    "dateModified": "2023-11-07T12:00:00Z", // yy-mm-dd
     "articleBody": "At BackToSchool, we're on a mission to change lives through the power of education. We firmly believe that education is not just a path to success but a fundamental right for every child"
   };
 
   return (
-    <>
+    <div className="fade-in about__page">
     {/* Open graph tag for social media */}
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -62,13 +64,39 @@ export default function AboutPage() {
         <meta property="og:image" content="https://backtoschoolngo.netlify.app/static/media/Back%20to%20school%20NGO%20Hero%20img.da35e1431f101646fc93.png" />
         <meta property="og:url" content="https://www.backtoschoolngo.com/" />
       </Helmet>
-      <div className="fade-in boxed pad">
+      <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp'})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundColor: '#000000'}}>
+        <div div className='boxed pad'>
+            <WhatWeDoHeroSection 
+              title= "About BackToSchool NGO"
+              text= "Empowering Lives Through Education."/>    
+        </div>
+      </div>
+      <div className="boxed pad">
+        <InitiativeMainText
+                imttitle={About.InitiativeMainTextTitle}
+                imttext={About.InitiativeMainTextText}/>
         <AboutPageHeroSection />
-        <AboutMissionVisionComponent />
-        <AboutVideoComponent />
-        <AboutPageWhatWeDoComponent />
+        <InitiativeSectionTwo
+                isttitle={About.InitiativeSectionTwoTitle}
+                btntext={About.InitiativeSectionTwoBTNText}
+                boxtitleone={About.InitiativeSectionTwoBoxTitleOne}
+                boxtextone={About.InitiativeSectionTwoBoxTextOne}
+                boxtitletwo={About.InitiativeSectionTwoBoxTitleTwo}
+                boxtexttwo={About.InitiativeSectionTwoBoxTextTwo}
+                boxtitlethree={About.InitiativeSectionTwoBoxTitleThree}
+                boxtextthree={About.InitiativeSectionTwoBoxTextThree}/>
+        <AboutPageWhatWeDoComponent
+                wwdsubtitle={About.WhatWeDoSectionSubTitle} 
+                wwdtitle={About.WhatWeDoSectionTitle}
+                wwdtext={About.WhatWeDoSectionText} 
+                wwdboxone={About.WhatWeDoSectionBoxOneText}
+                wwdboxtwo={About.WhatWeDoSectionBoxTwoText}/>
         <WhatWeDoSubGroup />
       </div>
-    </>
+    </div>
   )
 }

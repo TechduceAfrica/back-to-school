@@ -32,7 +32,8 @@ p, a, li, ul, ol {
 }
 
 p, a {
-  color: #000000;
+  color: #555;
+  line-height: 28px;
 }
 
 p, li, ul, ol {

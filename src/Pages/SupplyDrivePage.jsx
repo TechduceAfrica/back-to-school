@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
-import { Helmet } from 'react-helmet'
-import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection'
-import InitiativeMainText from '../Components/InitiativeMainText'
-import InitiativeSectionOne from '../Components/InitiativeSectionOne'
-import InitiativeSectionTwo from '../Components/InitiativeSectionTwo'
+import React, {useEffect} from 'react';
+import { Helmet } from 'react-helmet';
+import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection';
+import InitiativeMainText from '../Components/InitiativeMainText';
+import InitiativeSectionOne from '../Components/InitiativeSectionOne';
+import InitiativeSectionTwo from '../Components/InitiativeSectionTwo';
 import InitiativeWhatWeDoSection from '../Components/InitiativeWhatWeDoSection'
 import SupplyDrive from '../Contents/SupplyDrive'
 

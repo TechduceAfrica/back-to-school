@@ -9,10 +9,11 @@ export default function AboutPageHeroSection() {
                 <h4>our Story</h4>
                 <h2>About Back To School</h2>
                 <p>
-                    At BackToSchool, we're on a mission to change lives through the power of education. 
-                    We firmly believe that education is not just a path to success but a fundamental 
-                    right for every child, regardless of their circumstances. Our organization is 
-                    dedicated to making this belief a reality.
+                    Founded in 2022, BackToSchool was born out of a desire to make a 
+                    positive impact on the lives of underprivileged children and 
+                    communities. Our founders recognized the educational disparities 
+                    that exist in the world, and they were determined to be part of 
+                    the solution.
                 </p>
             </div>
             <div className='about-hero-section-img'>

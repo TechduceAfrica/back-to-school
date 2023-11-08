@@ -3,9 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 64px;
-    margin-bottom: 64px;
+    margin-block: 100px;
     border-radius: 40px;
-    background-color: #F2EBE4;
+    background-color: #2A6355;
 }
 
 .about-what-we-do-section-wrapper > div {
@@ -31,7 +31,7 @@
     font-weight: 500;
     font-size: 64px;
     line-height: 83px;
-    color: #000000;
+    color: #FFF;
 }
 
 .about-what-we-do-left p, .about-what-we-do-right p {
@@ -41,11 +41,15 @@
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.05em;
-    color: #555555;
+}
+
+.about-what-we-do-right p {
+    color: #555;
 }
 
 .about-what-we-do-left p {
     margin-top: 10px;
+    color: #FFF;
 }
 
 .about-what-we-do-right {
