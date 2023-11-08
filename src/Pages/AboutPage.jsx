@@ -64,7 +64,7 @@ export default function AboutPage() {
         <meta property="og:image" content="https://backtoschoolngo.netlify.app/static/media/Back%20to%20school%20NGO%20Hero%20img.da35e1431f101646fc93.png" />
         <meta property="og:url" content="https://www.backtoschoolngo.com/" />
       </Helmet>
-      <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp'})`,
+      <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Primary%20school%20pupil%20happy%20to%20be%20in%20his%20school%20class%20room_Back%20to%20school%20NGO.webp'})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
                         backgroundRepeat: 'no-repeat',
