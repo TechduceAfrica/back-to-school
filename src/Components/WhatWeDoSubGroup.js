@@ -33,6 +33,7 @@ const WhatWeDoSubDetails = [
                     textbooks, notebooks, pencils, and uniforms. By doing so, we 
                     reduce the financial burden on families and ignite a passion 
                     for learning.`,
+        btslink: `/back-to-school-supply-drive`,
     }, {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
         btstitle: "Sponsor a Child Campaign",
@@ -42,6 +43,7 @@ const WhatWeDoSubDetails = [
                     disadvantaged backgrounds have access to quality education, 
                     breaking the cycle of poverty and opening doors to a 
                     brighter future.`,
+        btslink: `/sponsor-a-child-campaign`,
     }, {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
         btstitle: "Teacher Training & Support",
@@ -51,6 +53,7 @@ const WhatWeDoSubDetails = [
                     underserved communities. By enhancing the skills and 
                     knowledge of educators, we improve the overall quality of 
                     education in schools.`,
+        btslink: `/teacher-training-and-Support`,
     }, {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
         btstitle: "Skill Acquisition Campaign",
@@ -62,6 +65,7 @@ const WhatWeDoSubDetails = [
                     chances of finding employment or starting their own 
                     businesses, thereby contributing to poverty reduction and 
                     sustainable economic growth.`,
+        btslink: `/skill-acquisition-campaign`,
     }, {
         btsimg: "https://backtoschool.ngo/backtoschool-assets/Open%20Book.png",
         btstitle: "Digital Library for Primary Education",
@@ -73,6 +77,7 @@ const WhatWeDoSubDetails = [
                     of life. We believe that education should transcend 
                     geographical boundaries, and our digital library is a step 
                     in that direction.`,
+        btslink: `/digital-library`,
     }
 ];
 
@@ -91,6 +96,7 @@ export default function WhatWeDoSubGroup() {
                                         img={WhatWeDoSubDetail.btsimg}
                                         title={WhatWeDoSubDetail.btstitle}
                                         text={WhatWeDoSubDetail.btstext}
+                                        link={WhatWeDoSubDetail.btslink}
                                     />
                                 </div>
                             </SplideSlide>

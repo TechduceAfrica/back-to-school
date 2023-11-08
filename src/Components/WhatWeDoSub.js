@@ -11,7 +11,7 @@ export default function WhatWeDoSub(props) {
             </div>
             <h3>{props.title}</h3>
             <p>{props.text}</p>
-            <NavLink to='/ngo-programs-and-initiatives'  target='_self' rel='noreferrer'>know more</NavLink>
+            <NavLink to={props.link}  target='_self' rel='noreferrer' title={props.title}>know more</NavLink>
         </div>
     </>
   )

@@ -38,7 +38,7 @@ const initList = [
         text: `The Digital Library for Primary Education is our commitment to providing free 
                 and accessible educational resources to primary school children. This digital 
                 library breaks down barriers and empowers children to learn and grow.`,
-        link: `/skill-acquisition-campaign`,
+        link: `/digital-library`,
     }
 ];
 
