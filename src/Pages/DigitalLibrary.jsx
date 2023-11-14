@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { Helmet } from 'react-helmet'
 import '../Stylesheet/DigitalLibrary.css'
+import DigitalLibraryContent from '../Contents/DigitalLibrary'
 import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection'
 import DigitalLibrarySectionOne from '../Components/DigitalLibrarySectionOne';
 import DigitalLibrarySectionTwo from '../Components/DigitalLibrarySectionTwo';
@@ -78,7 +79,23 @@ const schema = {
         <article>
           <DigitalLibrarySectionTwo/>
         </article>
-        <DigitalLibrarySectionThree/>
+        <DigitalLibrarySectionThree
+                DLSectionThreeTitle={DigitalLibraryContent.DigitalLibrarySectionThreeTitle}
+                DLSectionThreeTitleOne={DigitalLibraryContent.DigitalLibrarySectionThreeTitleOne}
+                DLSectionThreeTextOne={DigitalLibraryContent.DigitalLibrarySectionThreeTextOne}
+                DLSectionThreeTitleTwo={DigitalLibraryContent.DigitalLibrarySectionThreeTitleTwo}
+                DLSectionThreeTextTwo={DigitalLibraryContent.DigitalLibrarySectionThreeTextTwo}
+                DLSectionThreeTitleThree={DigitalLibraryContent.DigitalLibrarySectionThreeTitleThree}
+                DLSectionThreeTextThree={DigitalLibraryContent.DigitalLibrarySectionThreeTextThree}
+                DLSectionThreeTitleFour={DigitalLibraryContent.DigitalLibrarySectionThreeTitleFour}
+                DLSectionThreeTextFour={DigitalLibraryContent.DigitalLibrarySectionThreeTextFour}
+                DLSectionThreeTitleFive={DigitalLibraryContent.DigitalLibrarySectionThreeTitleFive}
+                DLSectionThreeTextFive={DigitalLibraryContent.DigitalLibrarySectionThreeTextFive}
+                DLSectionThreeImg={DigitalLibraryContent.DigitalLibrarySectionThreeImg}
+                DLSectionThreeImgAlt={DigitalLibraryContent.DigitalLibrarySectionThreeImgAlt}
+                DLSectionThreeImgWidth={DigitalLibraryContent.DigitalLibrarySectionThreeImgWidth}
+                DLSectionThreeImgHeight={DigitalLibraryContent.DigitalLibrarySectionThreeImgHeight}
+                />
         <DigitalLibraryCta/>
       </main>      
     </div>

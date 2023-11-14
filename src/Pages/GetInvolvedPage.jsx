@@ -43,8 +43,8 @@ export default function GetInvolvedPage() {
                         backgroundColor: '#000000'}}>
                 <div div className='boxed pad'>
                 <WhatWeDoHeroSection 
-                    title= "Get Involved"
-                    text= "There are many ways to support our work and help to reach the next out of school child waiting to get Back to School."/>    
+                    title= "Volunteer with BackToSchool"
+                    text= "Make a Difference, One Child at a Time"/>    
                 </div> 
             </div>
 

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection'
 import InitiativeMainText from '../Components/InitiativeMainText'
 import InitiativeSectionOne from '../Components/InitiativeSectionOne'
-import InitiativeSectionTwo from '../Components/InitiativeSectionTwo'
+import InitiativeSectionTwo from '../Components/InitiativeSectionTwo';
 import InitiativeWhatWeDoSection from '../Components/InitiativeWhatWeDoSection'
 import SponsorChild from '../Contents/SponsorChild'
 

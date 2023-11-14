@@ -1,27 +1,43 @@
 import React from 'react';
 import './GetInvolvedSection.css';
-import VolunteerForm from './VolunteerForm';
-// import PrimaryBtn from './PrimaryBtn';
+import DigitalLibrarySectionThree from '../Components/DigitalLibrarySectionThree';
+import GetInvolved from '../Contents/Getinvolved'
 
 export default function GetInvolvedSection() {
   return (
     <>
         <div>
             <div className='get-involved-how-to'>
-                <h3>How to get Involved with our charity</h3>
+                <h3>How to get involved with our charity</h3>
                 <p>
-                    There are so many ways you can use your time and 
-                    skills to get involved with charity and help some 
-                    of the world’s poorest communities to build a 
-                    brighter future. Whether it’s volunteering at 
-                    community events, hosting your own fundraiser, 
-                    taking part in a sponsored activity or selling 
-                    cakes to your friends, your effort will be making 
-                    an incredible difference to children’s lives.
+                    At BackToSchool, we firmly believe that real change 
+                    happens when individuals come together with a shared 
+                    passion for a brighter future. Our volunteers are 
+                    the heart and soul of our organization, and their 
+                    dedication plays a pivotal role in transforming the 
+                    lives of underprivileged children.
                 </p>
             </div>
 
-            <div className='bord-rds get-involved-section green'>
+            <DigitalLibrarySectionThree
+                DLSectionThreeTitle={GetInvolved.GetInvolvedSectionThreeTitle}
+                DLSectionThreeTitleOne={GetInvolved.GetInvolvedSectionThreeTitleOne}
+                DLSectionThreeTextOne={GetInvolved.GetInvolvedSectionThreeTextOne}
+                DLSectionThreeTitleTwo={GetInvolved.GetInvolvedSectionThreeTitleTwo}
+                DLSectionThreeTextTwo={GetInvolved.GetInvolvedSectionThreeTextTwo}
+                DLSectionThreeTitleThree={GetInvolved.GetInvolvedSectionThreeTitleThree}
+                DLSectionThreeTextThree={GetInvolved.GetInvolvedSectionThreeTextThree}
+                DLSectionThreeTitleFour={GetInvolved.GetInvolvedSectionThreeTitleFour}
+                DLSectionThreeTextFour={GetInvolved.GetInvolvedSectionThreeTextFour}
+                DLSectionThreeTitleFive={GetInvolved.GetInvolvedSectionThreeTitleFive}
+                DLSectionThreeTextFive={GetInvolved.GetInvolvedSectionThreeTextFive}
+                DLSectionThreeImg={GetInvolved.GetInvolvedSectionThreeImg}
+                DLSectionThreeImgAlt={GetInvolved.GetInvolvedSectionThreeImgAlt}
+                DLSectionThreeImgWidth={GetInvolved.GetInvolvedSectionThreeImgWidth}
+                DLSectionThreeImgHeight={GetInvolved.GetInvolvedSectionThreeImgHeight}
+                />
+
+            {/* <div className='bord-rds get-involved-section green'>
                 <div>
                     <h4>
                         Volunteer
@@ -35,7 +51,7 @@ export default function GetInvolvedSection() {
                 <div>
                     <VolunteerForm />
                 </div>
-            </div>
+            </div> */}
 
             <div className='bord-rds get-involved-section light'>
                 <div>

@@ -1,5 +1,5 @@
-import React from 'react'
-import DigitalLibraryContent from '../Contents/DigitalLibrary'
+import React from 'react';
+import DigitalLibraryContent from '../Contents/DigitalLibrary';
 
 export default function DigitalLibrarySectionTwo() {
   return (
