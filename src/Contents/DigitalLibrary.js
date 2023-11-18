@@ -55,4 +55,4 @@ const DigitalLibraryContent = {
     DigitalLibraryCtaImgHeight: "372px",
 }
 
-export default DigitalLibraryContent
+export default DigitalLibraryContent;

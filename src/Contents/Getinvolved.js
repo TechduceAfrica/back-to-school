@@ -15,22 +15,18 @@ const GetInvolved = {
                                             connections and be part of a supportive network.`,
                                             
     GetInvolvedSectionThreeTitle: `Ways to Get Involved`,
-    GetInvolvedSectionThreeTitleOne: `Vast resource collection`,
-    GetInvolvedSectionThreeTextOne: `Explore: Our digital library hosts a vast collection of resources, including textbooks, 
-                                        interactive lessons, educational videos, and more. These materials cover a wide range of 
-                                        subjects and topics.`,
-    GetInvolvedSectionThreeTitleTwo: `User-Friendly Interface`,
+    GetInvolvedSectionThreeTitleOne: `Classroom Support`,
+    GetInvolvedSectionThreeTextOne: `${`<span>Role:<span/>`} Assist teachers in underserved schools, providing one-on-one support to students or helping with classroom activities.<br/>
+                                        <span>Impact:<span/> Your presence and support can boost a child's confidence and academic performance.`,
+    GetInvolvedSectionThreeTitleTwo: `Campaign Assistance`,
     GetInvolvedSectionThreeTextTwo: `Access: Our user-friendly interface ensures easy navigation, making it accessible to children 
                                         and learners of all ages. It's designed with simplicity and effectiveness in mind.`,
-    GetInvolvedSectionThreeTitleThree: `Continuous Updates`,
+    GetInvolvedSectionThreeTitleThree: `Event Coordination`,
     GetInvolvedSectionThreeTextThree: `Stay Current: We continuously update our digital library with the latest educational materials, 
                                             ensuring that learners have access to up-to-date information.`,
-    GetInvolvedSectionThreeTitleFour: `Supportive Community`,
+    GetInvolvedSectionThreeTitleFour: `Fundraising and Outreach`,
     GetInvolvedSectionThreeTextFour: `Connect: Join a supportive community of learners, parents, and educators who share a passion for 
                                             education and knowledge sharing.`,
-    GetInvolvedSectionThreeTitleFive: `Interactive Learning`,
-    GetInvolvedSectionThreeTextFive: `Engage: Many of our resources offer interactive features, enabling learners to actively engage 
-                                            with the content and enhance their understanding.`,
     GetInvolvedSectionThreeImg: `${process.env.PUBLIC_URL + '/images/Supportive community - Back to school NGO_BacktoschoolNGO.webp'}`,
     GetInvolvedSectionThreeImgAlt: "Digital library hosts a vast collection of resources, including textbooks",
     GetInvolvedSectionThreeImgWidth: "545px",

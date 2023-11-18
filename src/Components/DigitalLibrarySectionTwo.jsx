@@ -1,36 +1,35 @@
 import React from 'react';
-import DigitalLibraryContent from '../Contents/DigitalLibrary';
 
-export default function DigitalLibrarySectionTwo() {
+export default function DigitalLibrarySectionTwo(props) {
   return (
     <div className='NGO-dl__section-two'>
         <div>
             <h3>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoTitle}
+                {props.DLSectionTwoTitle}
             </h3>
         </div>
         <div className="NGO-dl__sec2__box">
             <h4>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoBoxTitleOne}
+                {props.DLSectionTwoBoxTitleOne}
             </h4>
             <p>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoBoxTextOne}
+                {props.DLSectionTwoBoxTextOne}
             </p>
         </div>
         <div className="NGO-dl__sec2__box">
             <h4>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoBoxTitleTwo}
+                {props.DLSectionTwoBoxTitleTwo}
             </h4>
             <p>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoBoxTextTwo}
+                {props.DLSectionTwoBoxTextTwo}
             </p>
         </div>
         <div className="NGO-dl__sec2__box">
             <h4>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoBoxTitleThree}
+                {props.DLSectionTwoBoxTitleThree}
             </h4>
             <p>
-                {DigitalLibraryContent.DigitalLibrarySectionTwoBoxTextThree}
+                {props.DLSectionTwoBoxTextThree}
             </p>
         </div>
     </div>

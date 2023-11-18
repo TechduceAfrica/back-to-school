@@ -1,7 +1,8 @@
 import React from 'react';
 import './GetInvolvedSection.css';
-import DigitalLibrarySectionThree from '../Components/DigitalLibrarySectionThree';
-import GetInvolved from '../Contents/Getinvolved'
+import DigitalLibrarySectionThree from './DigitalLibrarySectionThree';
+import GetInvolved from '../Contents/Getinvolved';
+import DigitalLibrarySectionTwo from './DigitalLibrarySectionTwo';
 
 export default function GetInvolvedSection() {
   return (
@@ -18,6 +19,15 @@ export default function GetInvolvedSection() {
                     lives of underprivileged children.
                 </p>
             </div>
+
+            <DigitalLibrarySectionTwo
+                DLSectionTwoTitle={GetInvolved.GetInvolvedSectionTwoTitle}
+                DLSectionTwoBoxTitleOne={GetInvolved.GetInvolvedSectionTwoBoxTitleOne}
+                DLSectionTwoBoxTextOne={GetInvolved.GetInvolvedSectionTwoBoxTextOne}
+                DLSectionTwoBoxTitleTwo={GetInvolved.GetInvolvedSectionTwoBoxTitleTwo}
+                DLSectionTwoBoxTextTwo={GetInvolved.GetInvolvedSectionTwoBoxTextTwo}
+                DLSectionTwoBoxTitleThree={GetInvolved.DigitalLibrarySectionTwoBoxTitleThree}
+                DLSectionTwoBoxTextThree={GetInvolved.DigitalLibrarySectionTwoBoxTextThree}/>
 
             <DigitalLibrarySectionThree
                 DLSectionThreeTitle={GetInvolved.GetInvolvedSectionThreeTitle}

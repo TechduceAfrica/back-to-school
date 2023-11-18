@@ -77,7 +77,14 @@ const schema = {
       <main className='boxed pad'>
         <DigitalLibrarySectionOne/>
         <article>
-          <DigitalLibrarySectionTwo/>
+          <DigitalLibrarySectionTwo
+                DLSectionTwoTitle={DigitalLibraryContent.DigitalLibrarySectionTwoTitle}
+                DLSectionTwoBoxTitleOne={DigitalLibraryContent.DigitalLibrarySectionTwoBoxTitleOne}
+                DLSectionTwoBoxTextOne={DigitalLibraryContent.DigitalLibrarySectionTwoBoxTextOne}
+                DLSectionTwoBoxTitleTwo={DigitalLibraryContent.DigitalLibrarySectionTwoBoxTitleTwo}
+                DLSectionTwoBoxTextTwo={DigitalLibraryContent.DigitalLibrarySectionTwoBoxTextTwo}
+                DLSectionTwoBoxTitleThree={DigitalLibraryContent.DigitalLibrarySectionTwoBoxTitleThree}
+                DLSectionTwoBoxTextThree={DigitalLibraryContent.DigitalLibrarySectionTwoBoxTextThree}/>
         </article>
         <DigitalLibrarySectionThree
                 DLSectionThreeTitle={DigitalLibraryContent.DigitalLibrarySectionThreeTitle}
