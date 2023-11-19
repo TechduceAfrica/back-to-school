@@ -149,6 +149,11 @@ details p {
     align-self: flex-start;
 }
 
+.NGO__dl__sec3-content img {
+    width: 100%;
+    height: 100%;
+}
+
 .NGO-dl__cta span {
     font-family: DM Sans;
     font-weight: 900;
