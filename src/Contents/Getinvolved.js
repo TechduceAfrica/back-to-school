@@ -16,8 +16,7 @@ const GetInvolved = {
                                             
     GetInvolvedSectionThreeTitle: `Ways to Get Involved`,
     GetInvolvedSectionThreeTitleOne: `Classroom Support`,
-    GetInvolvedSectionThreeTextOne: `${`<span>Role:<span/>`} Assist teachers in underserved schools, providing one-on-one support to students or helping with classroom activities.<br/>
-                                        <span>Impact:<span/> Your presence and support can boost a child's confidence and academic performance.`,
+    GetInvolvedSectionThreeTextOne: `Role: Assist teachers in underserved schools, providing one-on-one support to students or helping with classroom activities. Impact: Your presence and support can boost a child's confidence and academic performance.`,
     GetInvolvedSectionThreeTitleTwo: `Campaign Assistance`,
     GetInvolvedSectionThreeTextTwo: `Access: Our user-friendly interface ensures easy navigation, making it accessible to children 
                                         and learners of all ages. It's designed with simplicity and effectiveness in mind.`,

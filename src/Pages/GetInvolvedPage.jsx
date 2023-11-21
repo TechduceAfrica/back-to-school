@@ -35,7 +35,7 @@ export default function GetInvolvedPage() {
         <meta property="og:url" content="https://www.backtoschoolngo.com/getinvolved" />
       </Helmet>
 
-        <div className="fade-in">
+        <div className="fade-in get__involved">
             <div style={{ backgroundImage: `url(${`https://backtoschool.ngo/backtoschool-assets/Get%20Involved%20Hero.png`})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
