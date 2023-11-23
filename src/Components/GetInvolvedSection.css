@@ -76,12 +76,33 @@
     color: #000000;
 }
 
-.light img {
+.light img, .green img {
     width: 100%;
 }
 
 .get-involved-btn {
     margin-top: 3rem;
+}
+
+.get__involved__section__4 {
+    margin-bottom: 4rem;
+}
+
+.get__involved__section__4__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.get__involved__section__4 h3 {
+    color: #2A6355;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 64px;
+    line-height: normal;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 787px) {
@@ -94,7 +115,8 @@
         text-align: center;
     }
 
-    .get-involved-section h4 {
+    .get-involved-section h4, 
+    .get__involved__section__4 h3 {
         font-size: 32px;
         line-height: 28px;
     }

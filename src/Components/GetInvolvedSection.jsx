@@ -1,8 +1,10 @@
 import React from 'react';
 import './GetInvolvedSection.css';
 import DigitalLibrarySectionThree from './DigitalLibrarySectionThree';
-import GetInvolved from '../Contents/Getinvolved';
+import { GetInvolved, GetInvolvedSectionFourBox } from '../Contents/Getinvolved';
 import DigitalLibrarySectionTwo from './DigitalLibrarySectionTwo';
+import GetInvolvedSectionFour from './GetInvolvedSectionFour';
+import VolunteerForm from './VolunteerForm'
 
 export default function GetInvolvedSection() {
   return (
@@ -47,45 +49,39 @@ export default function GetInvolvedSection() {
                 DLSectionThreeImgHeight={GetInvolved.GetInvolvedSectionThreeImgHeight}
                 />
 
-            {/* <div className='bord-rds get-involved-section green'>
-                <div>
-                    <h4>
-                        Volunteer
-                    </h4>
-                    <p>
-                        Become a Back To School volunteer. 
-                        Join our army of volunteers, learn new skills, 
-                        meet new people and help us reach more out of school children.
-                    </p>
+            <div className='get__involved__section__4'>
+                <h3>How to Get Started</h3>
+                <div className='get__involved__section__4__box'>
+                    {GetInvolvedSectionFourBox.map((GetInvolvedSectionFourBx, index) => 
+                        (
+                            <GetInvolvedSectionFour  key={index}
+                                gisfNumber={GetInvolvedSectionFourBx.GetInvolvedSectionFourBoxNumber}
+                                gisfTopic={GetInvolvedSectionFourBx.GetInvolvedSectionFourBoxTitle}
+                                gisfBody={GetInvolvedSectionFourBx.GetInvolvedSectionFourBoxBody}/>
+                        )
+                    )}
                 </div>
-                <div>
-                    <VolunteerForm />
-                </div>
-            </div> */}
+            </div>
 
-            <div className='bord-rds get-involved-section light'>
+
+            <div className='bord-rds get-involved-section green'>
                 <div>
                     <h4>
-                        Fundraise
+                        Your Time, Their Future
                     </h4>
                     <p>
-                        Fundraisers play a critical role in keeping the flame of 
-                        Back to School glowing. These selfless givers raise money 
-                        to provide daily meals for hungry schoolchildren all 
-                        across the world. From a young child using their own 
-                        money to help others to community-wide fundraising efforts, 
-                        every single one of them is inspiring. The lives of 
-                        children in some of Nigeria's poorest states can be 
-                        improved significantly as a result of your efforts.
+                        Join us in empowering children to break free from the cycle of poverty 
+                        through education. Your time and dedication can help change lives. 
+                        Together, we can create a brighter future for the next generation.
                     </p>
-                    {/* <div className='get-involved-btn'>
-                        <PrimaryBtn btntext='Give Now' btnlink='/' />
-                    </div> */}
                 </div>
                 <div>
                     <img src='https://backtoschool.ngo/backtoschool-assets/Fundraise%20for%20back%20to%20school.png' alt='fundraising for back to school' />
                 </div>
             </div>
+
+            <VolunteerForm/>
+            
         </div>
     </>
   )

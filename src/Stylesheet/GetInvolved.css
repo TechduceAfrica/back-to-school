@@ -1,0 +1,50 @@
+.get__involved__sec__4 {
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 405px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: #F2EBE4;
+}
+
+.get__involved__sec__4:has(span, p, h4) {
+    transition: all 550ms ease-in-out;
+    cursor: default;
+}
+
+.get__involved__sec__4:hover {
+    background-color: #093532;
+    & span {
+        color: #093532;
+        background-color: #F2EBE4;
+    }
+    & h4 {
+        color: #FFF;
+    }
+    & p {
+        color: #F2EBE4;
+    }
+}
+
+.get__involved__sec__4 > span {
+    font-family: DM Sans;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+
+    display: grid;
+    place-content: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #093532;
+}
+
+.get__involved__sec__4 h4 {
+    text-transform: uppercase;
+}
