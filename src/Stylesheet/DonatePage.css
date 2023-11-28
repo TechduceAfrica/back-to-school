@@ -1,0 +1,38 @@
+.donate__list__cards {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.donate__list__card {
+    font-family: DM Sans;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    background: #F2EBE4;
+    transition: all 300ms ease-in-out 0ms;
+    flex: 0 1 350px;
+}
+
+.donate__list__card:hover {
+    transform: translateY(-5px);
+}
+
+.donate__list__card span {
+    font-weight: 700;
+    color: #093532;
+}
+
+.donate__list__card p {
+    color: #555;
+    text-align: center;
+    font-family: Helvetica Now Display;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}

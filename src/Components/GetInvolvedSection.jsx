@@ -4,7 +4,7 @@ import DigitalLibrarySectionThree from './DigitalLibrarySectionThree';
 import { GetInvolved, GetInvolvedSectionFourBox } from '../Contents/Getinvolved';
 import DigitalLibrarySectionTwo from './DigitalLibrarySectionTwo';
 import GetInvolvedSectionFour from './GetInvolvedSectionFour';
-import VolunteerForm from './VolunteerForm'
+import VolunteerForm from './VolunteerForm';
 
 export default function GetInvolvedSection() {
   return (

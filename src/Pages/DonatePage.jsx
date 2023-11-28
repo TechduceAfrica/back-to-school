@@ -2,6 +2,10 @@ import React, {useEffect} from 'react';
 import { Helmet } from 'react-helmet';
 import WhatWeDoHeroSection from '../Components/WhatWeDoHeroSection';
 import InitiativeMainText from '../Components/InitiativeMainText';
+import InitiativeSectionTwo from '../Components/InitiativeSectionTwo';
+import DigitalLibrarySectionThree from '../Components/DigitalLibrarySectionThree';
+import DonateList from '../Components/DonateList';
+import { DonatePageContent } from '../Contents/DonateContent'
 
 export default function DonatePage() {
 
@@ -46,7 +50,7 @@ export default function DonatePage() {
     };
 
   return (
-    <div className="fade-in">
+    <div className="fade-in donate__page">
 
         {/* Open graph tag for social media */}
         <Helmet>
@@ -65,14 +69,66 @@ export default function DonatePage() {
                           backgroundColor: '#000000'}}>
             <div div className='boxed pad'>
                 <WhatWeDoHeroSection 
-                    title= "Back to School Supply Drive"
-                    text= "Empowering young minds with the tools to succeed."/>    
+                    title= "Be a Lifeline"
+                    text= "Support education for all"/>    
             </div>
         </div>
 
-        <InitiativeMainText
-                imttitle='Title'
-                imttext='Body'/>
+        <main className='boxed pad'>
+            <InitiativeMainText
+                imttitle={DonatePageContent.dpcMainTextTitle}
+                imttext={DonatePageContent.dpcMainTextText}
+            />
+
+            <InitiativeSectionTwo
+                isttitle={DonatePageContent.dpcSectionTwoTitle}
+                btntext={''}
+                boxtitleone={DonatePageContent.dpcSectionTwoBoxTitleOne}
+                boxtextone={DonatePageContent.dpcSectionTwoBoxTextOne}
+                boxtitletwo={DonatePageContent.dpcSectionTwoBoxTitleTwo}
+                boxtexttwo={DonatePageContent.dpcSectionTwoBoxTextTwo}
+                boxtitlethree={DonatePageContent.dpcSectionTwoBoxTitleThree}
+                boxtextthree={DonatePageContent.dpcSectionTwoBoxTextThree}
+            />
+
+            <DigitalLibrarySectionThree
+                DLSectionThreeTitle={DonatePageContent.dpcSectionThreeTitle}
+                DLSectionThreeTitleOne={DonatePageContent.dpcSectionThreeTitleOne}
+                DLSectionThreeTextOne={DonatePageContent.dpcSectionThreeTextOne}
+                DLSectionThreeTitleTwo={DonatePageContent.dpcSectionThreeTitleTwo}
+                DLSectionThreeTextTwo={DonatePageContent.dpcSectionThreeTextTwo}
+                DLSectionThreeTitleThree={DonatePageContent.dpcSectionThreeTitleThree}
+                DLSectionThreeTextThree={DonatePageContent.dpcSectionThreeTextThree}
+                DLSectionThreeTitleFour={DonatePageContent.dpcSectionThreeTitleFour}
+                DLSectionThreeTextFour={DonatePageContent.dpcSectionThreeTextFour}
+                DLSectionThreeTitleFive={DonatePageContent.dpcSectionThreeTitleFive}
+                DLSectionThreeTextFive={DonatePageContent.dpcSectionThreeTextFive}
+                DLSectionThreeImg={DonatePageContent.dpcSectionThreeImg}
+                DLSectionThreeImgAlt={DonatePageContent.dpcSectionThreeImgAlt}
+                DLSectionThreeImgWidth={DonatePageContent.dpcSectionThreeImgWidth}
+                DLSectionThreeImgHeight={DonatePageContent.dpcSectionThreeImgHeight}
+            />
+
+            <DonateList 
+                DonateListTitle={DonatePageContent.dpcDonateListTitle}/>
+
+            <div className='bord-rds green'>
+                <div>
+                    <h4>
+                        The Power of Collective Giving
+                    </h4>
+                    <p>
+                        Your contribution, no matter the size, is part of a larger collective 
+                        effort to transform lives. Together, we can bridge educational 
+                        disparities and create a world where every child has the opportunity 
+                        to learn, grow, and succeed.
+                    </p>
+                </div>
+                <div>
+                    <img src='https://backtoschool.ngo/backtoschool-assets/Fundraise%20for%20back%20to%20school.png' alt='fundraising for back to school' />
+                </div>
+            </div>
+        </main>
         
     </div>
   )
