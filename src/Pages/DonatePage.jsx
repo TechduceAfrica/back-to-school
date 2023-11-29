@@ -59,8 +59,12 @@ return (
             <title>Donate Now | Be a Lifeline</title>
             <meta property="og:title" content="Donate Now" />
             <meta property="og:description" content="Our Back-to-School Supply Drive is a heartfelt initiative aimed at ensuring that no child is left behind due to a lack of essential school supplies..." />
-            <meta property="og:image" content="https://backtoschoolngo.com/images/Back%20to%20School%20NGO%20Supply%20Drive.webp" />
+            <meta property="og:image" content="https://backtoschool.ngo/backtoschool-assets/Fundraise%20for%20back%20to%20school.png" />
+            <meta property="og:image:width" content="544" />
+            <meta property="og:image:height" content="371"/>
+            <meta name="twitter:card" content="summary_large_image" />
             <meta property="og:url" content="https://www.backtoschoolngo.com/donate" />
+            <link rel="canonical" href="https://www.backtoschoolngo.com/donate" />
         </Helmet>
 
         <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/Back%20to%20school%20NGO_Digital%20Library_book-library-with-open-textbook%201_BacktoschoolNGO.webp'})`,
