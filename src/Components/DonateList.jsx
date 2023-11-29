@@ -5,7 +5,7 @@ import { DonateListCardct } from '../Contents/DonateContent'
 export default function DonateList(props) {
   return (
     <div>
-        <section>
+        <section className='donate__list'>
             <h3>
                 {props.DonateListTitle}
             </h3>

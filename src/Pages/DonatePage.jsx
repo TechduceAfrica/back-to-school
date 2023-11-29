@@ -5,7 +5,8 @@ import InitiativeMainText from '../Components/InitiativeMainText';
 import InitiativeSectionTwo from '../Components/InitiativeSectionTwo';
 import DigitalLibrarySectionThree from '../Components/DigitalLibrarySectionThree';
 import DonateList from '../Components/DonateList';
-import { DonatePageContent } from '../Contents/DonateContent'
+import { DonatePageContent } from '../Contents/DonateContent';
+import '../Stylesheet/DonatePage.css';
 
 export default function DonatePage() {
 
@@ -49,7 +50,7 @@ export default function DonatePage() {
         "articleBody": "Our Back-to-School Supply Drive is a heartfelt initiative aimed at ensuring that no child is left behind due to a lack of essential school supplies..."
     };
 
-  return (
+return (
     <div className="fade-in donate__page">
 
         {/* Open graph tag for social media */}
