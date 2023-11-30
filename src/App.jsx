@@ -17,6 +17,7 @@ import SkillAcquisitionCampaign from './Pages/SkillAcquisitionCampaign';
 import ProgramsAndInitiatives from './Pages/ProgramsAndInitiatives';
 import DigitalLibrary from './Pages/DigitalLibrary';
 import DonatePage from './Pages/DonatePage';
+import TestFormPage from './Pages/TestFormPage'
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route exact path='/ngo-programs-and-initiatives' element={<ProgramsAndInitiatives/>} />
             <Route exact path='/digital-library' element={<DigitalLibrary/>} />
             <Route exact path='/donate' element={<DonatePage/>} />
+            <Route exact path='/testform' element={<TestFormPage/>} />
           </Routes>
         </div>
         <Footer />
