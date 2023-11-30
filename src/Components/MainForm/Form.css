@@ -1,0 +1,97 @@
+.back__to__school__form {
+    font-family: Helvetica Now Display;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.back__to__school__form h4 {
+    font-size: 2rem;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.back__to__school__form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 30px;
+}
+
+.back__to__school__form__wrapper > div {
+    flex: 0 1 485px;
+}
+
+.back__to__school__form label {
+    color: #000;
+    font-family: Helvetica Now Display;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.back__to__school__form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #093532;
+    background: #FFF;
+    &.not-empty {
+        background-color: #F2EBE4;
+        outline-color: #093532;
+    }
+}
+
+.back__to__school__form input:-ms-input-placeholder {
+    opacity: .7;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.back__to__school__form input::placeholder, 
+.back__to__school__form input::-webkit-input-placeholder {
+    opacity: .7;
+    font-size: .9rem;
+    color: #000;
+}
+
+.form__input__error__wrapper {
+    /* background-color: #F2EBE4; */
+    margin-bottom: 20px;
+    padding: 1px 25px;
+}
+
+.form__input__error__message {
+    font-family: Helvetica Now Display;
+    font-size: 0.8rem;
+    color: #EF8451;
+    box-sizing: border-box;
+}
+
+button {
+    align-self: self-start;
+    color: #FFF;
+    font-family: Helvetica Now Display;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #093532;
+    border-radius: 10px;
+    padding: 12px 48px !important;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        background-color: #EF8451;
+        color: #000;
+    }
+}
+
+@media (max-width: 1014px) {
+    .back__to__school__form__wrapper > div {
+        flex: 1 1 100%;
+    }
+}

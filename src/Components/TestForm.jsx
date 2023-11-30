@@ -49,16 +49,15 @@ export default function TestForm() {
     }
 
     function onSubmit(values) {
+        console.log('child form')
         console.log(values)
     }
 
     return (
-        <div>
-            <MainForm 
-                formTemplate={formTemplate}
-                onSubmit={onSubmit}
-            />
-        </div>
+        <MainForm 
+            formTemplate={formTemplate}
+            onSubmit={onSubmit}
+        />  
     )
 }
 
