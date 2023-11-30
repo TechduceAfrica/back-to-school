@@ -32,7 +32,9 @@
     font-weight: 400;
 }
 
-.back__to__school__form input {
+.back__to__school__form input, 
+.back__to__school__form select,
+.back__to__school__form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 15px 10px;
@@ -46,14 +48,25 @@
     }
 }
 
-.back__to__school__form input:-ms-input-placeholder {
+.back__to__school__form textarea {
+    height: 160px;
+    resize: none;
+}
+
+.back__to__school__form input:-ms-input-placeholder,
+.back__to__school__form select:-ms-input-placeholder,
+.back__to__school__form textarea:-ms-input-placeholder {
     opacity: .7;
     font-size: 0.9rem;
     color: #000;
 }
 
 .back__to__school__form input::placeholder, 
-.back__to__school__form input::-webkit-input-placeholder {
+.back__to__school__form input::-webkit-input-placeholder,
+.back__to__school__form select::placeholder,
+.back__to__school__form textarea::placeholder,
+.back__to__school__form select::-webkit-input-placeholder,
+.back__to__school__form textarea::-webkit-input-placeholder {
     opacity: .7;
     font-size: .9rem;
     color: #000;

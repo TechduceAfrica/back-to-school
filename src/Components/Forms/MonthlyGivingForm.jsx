@@ -1,10 +1,10 @@
 import React from 'react';
-import MainForm from './MainForm/MainForm';
+import MainForm from '../MainForm/MainForm';
 
-export default function TestForm() {
-    
+export default function MonthlyGivingForm() {
+
     const formTemplate = {
-        title: 'Test Form',
+        title: 'Monthly Giving Form',
         fields: [
             {
                 title: 'Name',
@@ -14,18 +14,6 @@ export default function TestForm() {
                 placeholder: 'John Doe',
                 validationProps: {
                     required: 'Name is required'
-                }
-            },
-            {
-                title: 'Phone Number',
-                type: 'tel',
-                name: 'telephone',
-                id: 'telephone',
-                placeholder: '08012345678',
-                validationProps: {
-                    required: 'Name is required',
-                    maxLength: '11',
-                    pattern: '/[0-9]{3}[0-9]{4}[0-9]{4}/i',
                 }
             },
             {
@@ -39,17 +27,38 @@ export default function TestForm() {
                 }
             },
             {
+                title: 'Phone Number',
+                type: 'tel',
+                name: 'telephone',
+                id: 'telephone',
+                placeholder: '08012345678',
+            }, 
+            {
                 title: 'Your Location',
                 type: 'text',
                 name: 'location',
                 id: 'location',
                 placeholder: 'Lagos, Nigeria',
             },
+            {
+                title: 'Donation Cause',
+                type: 'text',
+                name: 'additionalinfo',
+                id: 'donationcause',
+                placeholder: 'Reason or purpose for donating.',
+            },
+            {
+                title: 'Amount in Naira',
+                type: 'number',
+                name: 'amount',
+                id: 'amount',
+                placeholder: '10,000',
+            }    
         ]
     }
 
     function onSubmit(values) {
-        console.log('child form')
+        console.log('MonthlyGivingForm')
         console.log(values)
     }
 
@@ -57,7 +66,6 @@ export default function TestForm() {
         <MainForm 
             formTemplate={formTemplate}
             onSubmit={onSubmit}
-        />  
+        /> 
     )
 }
-

@@ -1,10 +1,10 @@
 import React from 'react';
-import MainForm from './MainForm/MainForm';
+import MainForm from '../MainForm/MainForm';
 
-export default function TestForm() {
-    
+export default function SupportAChildForm() {
+
     const formTemplate = {
-        title: 'Test Form',
+        title: 'Sponsor A Child Form',
         fields: [
             {
                 title: 'Name',
@@ -22,11 +22,6 @@ export default function TestForm() {
                 name: 'telephone',
                 id: 'telephone',
                 placeholder: '08012345678',
-                validationProps: {
-                    required: 'Name is required',
-                    maxLength: '11',
-                    pattern: '/[0-9]{3}[0-9]{4}[0-9]{4}/i',
-                }
             },
             {
                 title: 'Your Email',
@@ -45,6 +40,31 @@ export default function TestForm() {
                 id: 'location',
                 placeholder: 'Lagos, Nigeria',
             },
+            {
+                title: 'Amount in Naira',
+                type: 'number',
+                name: 'amount',
+                id: 'amount',
+                placeholder: '100,000',
+            },
+            {
+                title: 'Preferred Age Range',
+                type: 'number',
+                name: 'agerange',
+                id: 'agerange',
+                placeholder: '5years - 12years',
+                value1: '2years - 5years',
+                value2: '5years - 12years',
+                value3: '12years - 18years',
+                value4: '18years - 22years',
+            },
+            {
+                title: 'Additional Information',
+                type: 'text',
+                name: 'additionalinfo',
+                id: 'additionalinfo',
+                placeholder: 'Additional Information',
+            },
         ]
     }
 
@@ -53,11 +73,11 @@ export default function TestForm() {
         console.log(values)
     }
 
+
     return (
-        <MainForm 
-            formTemplate={formTemplate}
-            onSubmit={onSubmit}
-        />  
+            <MainForm 
+                formTemplate={formTemplate}
+                onSubmit={onSubmit}
+            />  
     )
 }
-

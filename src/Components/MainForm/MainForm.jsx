@@ -11,7 +11,7 @@ export default function MainForm({ formTemplate }) {
 
   const renderFields = (fields) => {
     return fields.map(field => {
-      let { title, type, name, id, placeholder } = field;
+      let { title, type, name, id, placeholder, value1, value2, value3, value4 } = field;
 
       switch (name) {
         case 'fname':
@@ -54,10 +54,46 @@ export default function MainForm({ formTemplate }) {
                 </div>
             </div>
           )
+          case 'amount':
+          return (
+            <div key={name}>
+                <label htmlFor={name}>{title}</label>
+                <input type={type} name={name} id={id} placeholder={placeholder} min='1000' step="500" {...register('amount', { required: true })} />
+                <div className='form__input__error__wrapper'>
+                  { errors.amount && <span className='form__input__error__message'>This field is required</span> }
+                </div>
+            </div>
+          )
+          case 'agerange':
+          return (
+            <div key={name}>
+                <label htmlFor={name}>{title}</label>
+                <select name={name} id={id} placeholder={placeholder} {...register('agerange', { required: true })}>
+                  <option value={value1}>{value1}</option>
+                  <option value={value2}>{value2}</option>
+                  <option value={value3}>{value3}</option>
+                  <option value={value4}>{value4}</option>
+                </select>
+                <div className='form__input__error__wrapper'>
+                  { errors.agerange && <span className='form__input__error__message'>This field is required</span> }
+                </div>
+            </div>
+          )
+          case 'additionalinfo':
+          return (
+            <div key={name}>
+                <label htmlFor={name}>{title}</label>
+                <textarea name={name} id={id} placeholder={placeholder} row='5' {...register('additionalinfo', { required: false })}>
+                </textarea>
+                <div className='form__input__error__wrapper'>
+                  { errors.additionalinfo && <span className='form__input__error__message'>This field is required</span> }
+                </div>
+            </div>
+          )
         default:
           return(
             <div key={name}>
-              <span>Invalid field</span>
+              <span>Invalid input field</span>
             </div>
           )
       }
@@ -68,7 +104,6 @@ export default function MainForm({ formTemplate }) {
   function onSubmit(values) {
     console.log('main-form');
     console.log(values)
-    console.log(1)
   };
 
   return (
