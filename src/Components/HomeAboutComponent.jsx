@@ -16,23 +16,24 @@ export default function HomeAboutComponent() {
 
                 <div>
                     <h3>
-                        Our mission, vision, & purpose
+                        Our Vision
                     </h3>
                     <p>
-                        BackToSchool’s Mission is to provide quality education to children in need, 
-                        regardless of their socio-economic background and empower them to build a 
-                        better a future for themselves and their communities.
+                        A World of Equal Opportunities: We envision a world where every child 
+                        has the same opportunities to learn, grow, and achieve their dreams. 
+                        We believe that access to quality education should be universal.
                     </p>
                     
                     <p>
-                        BackToSchool envisions a world where every child has access to quality 
-                        education and every child can achieve their full potential.
+                        Breaking Barriers: Our vision is to break down the barriers that hinder 
+                        children from receiving an education, be it financial, social, or 
+                        geographical. We strive to create a future where these barriers cease to exist.
                     </p>
                     
                     <p>
-                        Our purpose is to promote education as a tool for social and economic 
-                        empowerment. Also to provide children with the knowledge and skills 
-                        they need to succeed in life.
+                        Empowering Change: We see a world where education empowers children to change 
+                        their lives, their families, and their communities. Through knowledge, we 
+                        aim to bring about lasting positive change.
                     </p>
                     <div className='home-about-section-wrapper-right-btn'>
                         <PrimaryBtn

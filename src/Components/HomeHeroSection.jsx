@@ -1,5 +1,5 @@
 import React from 'react';
-import PrimaryBtn from '../Components/PrimaryBtn';
+import PrimaryBtn from './PrimaryBtn';
 import HeroImg from '../assets/Back to school NGO Hero img.png';
 import Book from '../assets/Open Book.png';
 import Support from '../assets/Financial suport.png';
@@ -11,13 +11,11 @@ export default function HomeHeroSection() {
         <div className='homehero-wrapper'>
             <div className='homehero-left'>
                 <h3>Back to school NGO</h3>
-                <h1>Help A Child Back To School</h1>
-                <p>Going back to school is an exciting time for students, 
-                    but for many children around the world, this is a luxury 
-                    they cannot afford. Lack of access to education has a 
-                    profound impact on a child’s future, limiting their 
-                    opportunities and perpetuating a cycle of poverty. 
-                    That’s where our NGO comes in.
+                <h1>Empowering Dreams, One Child at a Time</h1>
+                <p>At BackToSchool, we're on a mission to change lives through the power of education. 
+                    We firmly believe that education is not just a path to success but a fundamental 
+                    right for every child, regardless of their circumstances. Our organization is 
+                    dedicated to making this belief a reality.
                 </p>
                 <PrimaryBtn 
                     btntext= 'read more'
