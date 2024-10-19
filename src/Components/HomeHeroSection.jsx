@@ -46,11 +46,11 @@ export default function HomeHeroSection() {
             
             <div>
                 <div>
-                    <img src={Support} alt='FINANCIAL SUPPORT FOR THE POOR'/>
+                    <img src={Support} alt='SUPPORT THE UNPRIVILEGED'/>
                 </div>
                 <div>
                     <h4>
-                        FINANCIAL SUPPORT FOR THE POOR
+                        SUPPORT THE UNPRIVILEGED
                     </h4>
                     <p>
                         Access to financial support can be a lifeline for those experiencing poverty. 
