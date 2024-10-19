@@ -24,7 +24,7 @@ export default function HomeSupportComponent() {
             </div>
             <div>
                 <img 
-                    src='https://backtoschool.ngo/backtoschool-assets/Back%20to%20school%20NGO%20-%20our%20supports.png' 
+                    src='/images/Back%20to%20school%20NGO%20-%20our%20supports.png' 
                     alt='Our support back to school' 
                 />
             </div>
